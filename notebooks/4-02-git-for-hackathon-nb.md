@@ -45,9 +45,3 @@ voici une façon de faire
 :align: center
 :width: 800px
 ```
-
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```

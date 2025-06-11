@@ -21,11 +21,7 @@ nbhosting:
 
 # aperçu de l'implémentation
 
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
++++
 
 ce notebook est complètement **optionnel**
 

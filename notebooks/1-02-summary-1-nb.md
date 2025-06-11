@@ -18,11 +18,7 @@ nbhosting:
 
 # résumé du chapitre précédent
 
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
++++
 
 ## les commandes vues jusqu'ici
 

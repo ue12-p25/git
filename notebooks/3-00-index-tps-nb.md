@@ -19,12 +19,6 @@ nbhosting:
 
 # quelques TPs pour pratiquer `git`
 
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
-
 +++ {"tags": []}
 
 ## tp-add-by-lines

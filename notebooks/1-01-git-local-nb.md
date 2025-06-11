@@ -16,11 +16,7 @@ language_info:
 
 # `git` en local : les bases
 
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
++++
 
 Une introduction didactique sur une première utilisation du logiciel de gestion de versions `git`.
 

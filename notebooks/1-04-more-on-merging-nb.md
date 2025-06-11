@@ -18,11 +18,7 @@ nbhosting:
 
 # la fusion, et les conflits
 
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
++++
 
 ## on contextualise
 

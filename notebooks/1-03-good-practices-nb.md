@@ -16,11 +16,7 @@ language_info:
 
 # commits & bonnes pratiques
 
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
++++
 
 Une notebook très court, où on revient rapidement sur la bonne façon de découper son code en commits, et de rédiger les messages qui vont avec.
 

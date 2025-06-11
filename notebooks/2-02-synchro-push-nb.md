@@ -23,11 +23,7 @@ ce notebook contient des vidéos; si vous le lisez dans Jupyter, pour que les vi
 assurez-vous d'exécuter toutes les cellules avec *Run* -> *Run All Cells*
 ````
 
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
++++
 
 ## on contextualise
 

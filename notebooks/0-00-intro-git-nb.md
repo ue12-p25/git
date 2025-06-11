@@ -19,11 +19,7 @@ nbhosting:
 
 # UE12 - la gestion de versions avec `git`
 
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
++++
 
 ## un survol en slides
 
