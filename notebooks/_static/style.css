@@ -296,3 +296,8 @@ article main table {
 html[data-theme='dark'] .corrige {
     background-image: radial-gradient(circle at top left, #0e3852, #0c5517);
 }/* no course-specific style */
+
+ul.text-sm.leading-6>li>a {
+    padding-top: 0;
+    padding-bottom: 0;
+}
