@@ -43,14 +43,14 @@ pour ajouter **une dimension sociale** et offrir des possibilités de collaborat
 * chaque **compte** a un nom unique (votre identifiant github par exemple), et  
   on peut ranger autant de repos qu'on veut dans cet espace
 
-* on peut aussi créer des **organisations** (`ue12-p24` par exemple)  
+* on peut aussi créer des **organisations** (`ue12-p25` par exemple)  
   et pareil, dans une organisation on peut mettre autant de repos qu'on veut
 
 * que ce soit dans un compte ou une orga, l'URL d'un repo est toujours de la forme  
   ***https://github.com/le-compte-ou-l-orga/le-nom-du-repo***  
   comme par exemple, pour ce cours justement:  
-  `https://github.com/ue12-p24/git`  
-  (ou encore, `git@github.com:ue12-p24/git.git` avec ssh)
+  `https://github.com/ue12-p25/git`  
+  (ou encore, `git@github.com:ue12-p25/git.git` avec ssh)
 
 `````{admonition} le remote *origin*
 :class: dropdown note
@@ -65,7 +65,7 @@ $ git remote
 origin
   # pour voir à quelle URL correspond le remote 'origin'
 $ git remote get-url origin
-git@github.com:ue12-p24/git.git
+git@github.com:ue12-p25/git.git
 ```
 
 ````{admonition} créer un alias
@@ -79,7 +79,7 @@ git config --global alias.url "remote get-url origin"
 après quoi il vous suffira de faire
 ``` bash
 $ git url
-git@github.com:ue12-p24/git.git
+git@github.com:ue12-p25/git.git
 ```
 
 ````
@@ -217,6 +217,6 @@ enfin pour les avancés, sachez que toutes les opérations que l'on fait depuis 
 voici par exemple comment je crée un repo pour le TP "class-ids" de mon groupe
 
 ```bash
-$ gh repo create --public ue12-p24/git-tp-class-ids-groupe4
-✓ Created repository ue12-p24/git-tp-class-ids-groupe4 on GitHub
+$ gh repo create --public ue12-p25/git-tp-class-ids-groupe4
+✓ Created repository ue12-p25/git-tp-class-ids-groupe4 on GitHub
 ```

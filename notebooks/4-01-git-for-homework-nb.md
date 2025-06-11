@@ -64,12 +64,12 @@ quelques conseils dans ce cas de figure:
   (il est possible de le mettre dans un sous-dossier, mais l'expérience prouve que les débutants ont tendance à s'emmêler les pinceaux avec ce genre de setup)
 - cela signifie que vous aurez un layout qui ressemblera à
   ```console
-  /Users/jeanmineur/git/ue12-p24/
-  /Users/jeanmineur/git/ue12-p24/numerique/           # <- le repo du cours
-  /Users/jeanmineur/git/ue12-p24/numerique-homework/  # <- le repo des exercices
+  /Users/jeanmineur/git/ue12-p25/
+  /Users/jeanmineur/git/ue12-p25/numerique/           # <- le repo du cours
+  /Users/jeanmineur/git/ue12-p25/numerique-homework/  # <- le repo des exercices
   ```
 - et du coup pour faire un TP:
-  - vous commencez par aller (avec `cd`) dans le dossier `git/ue12-p24/numerique-homework`
+  - vous commencez par aller (avec `cd`) dans le dossier `git/ue12-p25/numerique-homework`
   - vous y créez le dossier de l'exercice, genre
     `mkdir mandelbrot/`
   - vous y allez
@@ -82,15 +82,15 @@ quelques conseils dans ce cas de figure:
 ### devoir avec *starter repo*
 
 on pourra également vous donner parfois un TP qui se présente sous la forme d'un repo git déjà constitué  
-pour avoir une idée vous pouvez aller voir un exemple d'un tel repo ici <https://github.com/ue22-p24/web-xkcd>  
+pour avoir une idée vous pouvez aller voir un exemple d'un tel repo ici <https://github.com/ue22-p25/web-xkcd>  
 
 c'est finalement plus simple ici, puisqu'il y a déjà un repo constitué, mais voici tout de même quelques conseils
 
 * comme ci-dessus, c'est sans doute une bonne idée de mettre votre repo de devoirs **à coté du cours**  
   e.g.
   ```
-  /Users/jeanmineur/git/ue22-p24/web/
-  /Users/jeanmineur/git/ue22-p24/web-xkcd
+  /Users/jeanmineur/git/ue22-p25/web/
+  /Users/jeanmineur/git/ue22-p25/web-xkcd
   ```
 
 * il s'agit donc de dupliquer le repo de départ, avant d'y ajouter votre contribution  
@@ -109,7 +109,7 @@ en détails ça donnerait ceci
 :width: 500px
 ```
 
-- vous allez sur la page du repo - e.g. <https://github.com/ue22-p24/web-xkcd> - et vous cliquez sur *Fork*
+- vous allez sur la page du repo - e.g. <https://github.com/ue22-p25/web-xkcd> - et vous cliquez sur *Fork*
 - cela crée pour vous une copie ici <https://github.com/jeanmineur/web-xkcd>
 - que vous clonez sur votre ordi en faisant, comme d'habitude (copiez-collez l'URL depuis github)
   ```bash
@@ -122,7 +122,7 @@ en détails ça donnerait ceci
 
 - vous commencez par cloner le repo
   ```
-  git clone git@github.com:ue22-p24/web-xkcd.git
+  git clone git@github.com:ue22-p25/web-xkcd.git
   ```
 - vous allez sur github créer un repo:
   - de préférence utilisez le même nom

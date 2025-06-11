@@ -36,7 +36,7 @@ HTML(filename="_static/style.html")
 
 quand on a fait plusieurs modifications distinctes, et qu'on veut les grouper en plusieurs commits, il faut pouvoir gérer **finement les ajouts dans l'index**, c'est-à-dire au niveau du bloc ou de la ligne
 
-<https://github.com/ue12-p24/git-tp-add-by-lines>
+<https://github.com/ue12-p25/git-tp-add-by-lines>
 ````
 
 +++ {"tags": []}
@@ -49,7 +49,7 @@ quand on a fait plusieurs modifications distinctes, et qu'on veut les grouper en
 un tp à faire individuellement  
 on crée délibérément un conflit pour savoir reconnaître les symptômes, et s'entrainer à résoudre le conflit
 
-<https://github.com/ue12-p24/git-tp-conflict>
+<https://github.com/ue12-p25/git-tp-conflict>
 ````
 
 +++
@@ -112,13 +112,13 @@ et que se passe-t-il alors exactement dans votre copie locale, si vous avez vous
 
 ce TP demande une courte préparation spécifique par groupe  
 une fois que c'est prêt vous devrez visiter une URL **dans le genre de**  
-*`https://github.com/ue12-p24/git-tp-clone-pull-groupe3`*  
+*`https://github.com/ue12-p25/git-tp-clone-pull-groupe3`*  
 
 ```{admonition} à faire par le prof
 :class: dropdown
 
 les instructions pour préparer le TP sont dans  
-`https://github.com/ue12-p24/git-tp-clone-pull-for-teacher`
+`https://github.com/ue12-p25/git-tp-clone-pull-for-teacher`
 ```
 ````
 
@@ -132,7 +132,7 @@ les instructions pour préparer le TP sont dans
 vous travaillez à plusieurs dans un repo, et vous n'**arrivez pas à pousser un commit** ?  
 c'est sûrement que quelqu'un d'autre a poussé avant vous…
 
-<https://github.com/ue12-p24/git-tp-killing-push>
+<https://github.com/ue12-p25/git-tp-killing-push>
 ````
 
 +++ {"tags": []}
@@ -145,7 +145,7 @@ c'est sûrement que quelqu'un d'autre a poussé avant vous…
 un tp plus complet où on simule un travail en groupe  
 à faire en groupes de 3 ou 4
 
-<https://github.com/ue12-p24/git-tp-teamwork>
+<https://github.com/ue12-p25/git-tp-teamwork>
 ````
 
 +++ {"tags": []}
@@ -205,7 +205,7 @@ un TP à faire à toute la classe
 
 ce TP demande une courte préparation spécifique par groupe  
 une fois que c'est prêt vous devrez visiter une URL **dans le genre de**  
-*`https://github.com/ue12-p24/git-tp-class-text-groupe3`*  
+*`https://github.com/ue12-p25/git-tp-class-text-groupe3`*  
 
 ````{admonition} à faire par le prof
 :class: dropdown seealso
@@ -214,13 +214,13 @@ une fois que c'est prêt vous devrez visiter une URL **dans le genre de**
 
 ```bash
   # cloner localement le repo de référence
-git clone git@github.com:ue12-p24/git-tp-class-text-template.git
+git clone git@github.com:ue12-p25/git-tp-class-text-template.git
   # aller dedans
 cd git-tp-class-text-template
   # créer le repo sur github - il faut avoir les droits
-gh repo create --public ue12-p24/git-tp-class-text-groupe3
+gh repo create --public ue12-p25/git-tp-class-text-groupe3
   # ajouter un remote qui pointe vers ce nouveau repo (vide pour l'instant)
-git remote add my-group git@github.com:ue12-p24/git-tp-class-text-groupe3.git
+git remote add my-group git@github.com:ue12-p25/git-tp-class-text-groupe3.git
   # pousser dedans
 git push my-group main
 ```

@@ -27,7 +27,7 @@ builds:
   script: |
     pip install jupyter-book
     jupyter-book build .
-  external_url: https://ue12-p24-git.readthedocs.io/
+  external_url: https://ue12-p25-git.readthedocs.io/
 
 # no mapping needed
 static-mappings: []

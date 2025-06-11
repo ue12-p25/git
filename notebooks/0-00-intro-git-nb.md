@@ -34,7 +34,7 @@ HTML(filename="_static/style.html")
 Pour les néophytes, [voici un slideshow](media/kn2-introduction-git.pdf) pour
 illustrer rapidement **le besoin**, et **les cas d'usage** les plus simples;
 [accessible aussi
-ici](https://github.com/ue12-p24/git/raw/main/notebooks/media/kn2-introduction-git.pdf)
+ici](https://github.com/ue12-p25/git/raw/main/notebooks/media/kn2-introduction-git.pdf)
 
 ````{admonition} pour lire le PDF
 :class: tip
@@ -75,10 +75,10 @@ même si clairement **il s'applique le mieux** à des contenus **de nature textu
 ## d'autres ressources pour ce cours
 
 * en version HTML statique :  
-  <https://ue12-p24-git.readthedocs.io/>
+  <https://ue12-p25-git.readthedocs.io/>
 
 * les sources de ce cours :
-  <https://github.com/ue12-p24/git>
+  <https://github.com/ue12-p25/git>
   
 * également utile, une *cheat sheet* éditée par github :  
   <https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf>

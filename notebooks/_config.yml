@@ -5,7 +5,7 @@ author: Thierry Parmentelat & Valérie Roy
 logo: media/logo-git-square.svg
 
 repository:
-  url: https://github.com/ue12-p24/git
+  url: https://github.com/ue12-p25/git
   branch: main
   path_to_book: notebooks
 
@@ -13,7 +13,7 @@ html:
   use_repository_button: yes
   use_edit_page_button: yes
   use_issues_button: yes
-  favicon: media/logo-p24-favicon.svg
+  favicon: media/logo-p25-favicon.svg
 
 only_build_toc_files: true
 
