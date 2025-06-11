@@ -1,0 +1,18 @@
+format: jb-book
+root: 0-00-intro-git-nb
+parts:
+- caption: git en local
+  chapters:
+  - glob: 1-*-nb
+- caption: git en réseau
+  chapters:
+  - glob: 2-*-nb
+- caption: index des TPs
+  chapters:
+  - glob: 3-*-nb
+- caption: git pour les cours
+  chapters:
+  - glob: 4-*-nb
+- caption: optionnel
+  chapters:
+  - glob: 5-*-nb

@@ -1,0 +1,7 @@
+prof #1 Nom  : McGonagall
+prof #1 Note : 12
+---
+prof #2 Nom  :
+prof #2 Note :
+---
+total        : 12

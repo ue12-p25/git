@@ -1,0 +1,10 @@
+# generic deps
+sphinx
+sphinx-rtd-theme
+jupyter-book
+
+# local dep
+sphinxcontrib_mermaid
+
+# toggable left sidebar
+pydata-sphinx-theme<0.16

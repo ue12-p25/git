@@ -1,0 +1,33 @@
+# the course structure under nbhosting
+tracks:
+- name: git
+  description: tutorial git
+  id: git
+  sections:
+  - name: git en local
+    notebooks:
+    - notebooks/1-*-nb
+  - name: git en réseau
+    notebooks:
+    - notebooks/2-*-nb
+  - name: index des TPs
+    notebooks:
+    - notebooks/3-*-nb
+  - name: git pour les cours
+    notebooks:
+    - notebooks/4-*-nb
+  - name: optionnel
+    notebooks:
+    - notebooks/5-*-nb
+builds:
+- id: handouts
+  name: cours sur git
+  description: HTML statique et cherchable
+  directory: notebooks
+  script: |
+    pip install jupyter-book
+    jupyter-book build .
+  external_url: https://ue12-p24-git.readthedocs.io/
+
+# no mapping needed
+static-mappings: []
