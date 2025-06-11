@@ -69,7 +69,7 @@ Depuis que le code existe les programmeurs ont plusieurs problèmes, parmi les p
 
 +++
 
-### quand les programmeurs travaillent en équipe
+### travailler en équipe
 
 +++
 
@@ -88,7 +88,7 @@ Notons, qu'il peut vous arriver aussi, *même en travaillant seul*, de travaille
 
 +++
 
-### besoin de l'outil de gestion de versions `git`
+### besoin de gestion de versions avec `git`
 
 +++
 
@@ -238,7 +238,7 @@ faites-vous connaitre si vous n'avez pas au moins la version **2.23**, car la fo
 
 +++
 
-## on transforme le dossier en dépôt `git init`
+## le dossier devient un dépôt `git init`
 
 +++
 
@@ -382,7 +382,7 @@ Enfin `git` nous dit que, pour ajouter des fichiers dans ce qui fera partie du p
 
 +++
 
-## ajout de fichiers sous gestion de version `git add`
+## ajout de fichiers dans le repo `git add`
 
 +++
 
@@ -588,7 +588,7 @@ désigner le dernier commit**.
 
 +++
 
-## les trois parties (fichiers + index + commits)
+## les 3 parties (fichiers + index + commits)
 
 +++
 
@@ -986,7 +986,7 @@ e2c02ca (HEAD -> main) première implémentation de factorielle dans le fichier 
 
 +++
 
-## checkpoint (perdu dans l'état de votre repo ?)
+## checkpoint (vous êtes perdu ?)
 
 +++
 
@@ -1084,7 +1084,7 @@ Oui vous feriez un `git status` !
 
 +++
 
-## différences des versions de fichiers `git diff`
+## différences entre versions `git diff`
 
 +++
 
