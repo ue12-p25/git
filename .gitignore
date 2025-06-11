@@ -1,2 +1,6 @@
 **/.ipynb_checkpoints/
 **/_build/
+
+# MyST build outputs
+_build
+node_modules
