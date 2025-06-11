@@ -1,0 +1,44 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: UE12 & UE22 - git
+  # I suspect the intention was maybe to use this for the title tooltip ?
+  # in any case as of now 2024 june the title is used for the tooltip too (a bit silly)
+  # and I can't see where this is used
+  description: "CIC 1A - Mines Paris PSL - git"
+  # this one causes additional buttons to be shown 
+  # in the upper right area (close to the github button)
+  license: CC-BY-NC-SA-4.0
+  # inserted under the title
+  authors:
+    - Thierry Parmentelat
+    - Valérie Roy
+  github: https://github.com/ue12-p25/git
+  keywords:
+    - Informatique
+    - MinesParis
+    - PSL
+    - UE12
+    - git
+  date: 2025-06-01
+  # bibliography: []
+
+site:
+  template: book-theme
+  # used in the tab name
+  title: ue12-p25-git
+  # this would be for the horizontal header bar - not used here (yet)
+  # nav: []
+  # actions:
+  #   - title: Learn More
+  #     url: https://mystmd.org/guide
+  domains: []
+  options:
+    favicon: media/favicon-p25.svg
+    logo: media/logo-git-square.svg
+    # very visible in the header
+    logo_text: "UE12: git"
+    style: "_static/style.css"
+
+extends:
+  - _myst-toc.yml
