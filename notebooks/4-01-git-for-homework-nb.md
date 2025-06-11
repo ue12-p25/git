@@ -17,14 +17,6 @@ nbhosting:
   title: git pour les cours
 ---
 
-License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
-
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
-
 # utiliser `git` pour les devoirs
 
 vous serez également amenés à utiliser github pour rendre vos devoirs;
@@ -41,6 +33,14 @@ dans tous les cas de figure (avec ou sans *starter code*):
 - **sauf si vous avez un *slug* farfelu** sur `github.com`, car dans ce cas le prof ne pourra pas faire l'association avec votre vrai nom; laissez-lui dans ce cas un mail pour lui dire "le *slug* `PatateChaude` en fait c'est moi Jean Mineur"
 
 +++
+
+License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
+
+```{code-cell}
+%%python
+from IPython.display import HTML
+HTML(filename="_static/style.html")
+```
 
 ### devoir sans starter repo
 

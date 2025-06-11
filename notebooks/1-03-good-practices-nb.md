@@ -14,6 +14,10 @@ language_info:
   name: bash
 ---
 
+# commits & bonnes pratiques
+
++++
+
 License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
@@ -21,10 +25,6 @@ License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 from IPython.display import HTML
 HTML(filename="_static/style.html")
 ```
-
-# commits & bonnes pratiques
-
-+++
 
 Une notebook très court, où on revient rapidement sur la bonne façon de découper son code en commits, et de rédiger les messages qui vont avec.
 

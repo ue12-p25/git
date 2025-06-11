@@ -17,6 +17,10 @@ nbhosting:
   title: introduction
 ---
 
+# UE12 - la gestion de versions avec `git`
+
++++
+
 License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
@@ -24,10 +28,6 @@ License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 from IPython.display import HTML
 HTML(filename="_static/style.html")
 ```
-
-# UE12 - la gestion de versions avec `git`
-
-+++
 
 ## un survol en slides
 

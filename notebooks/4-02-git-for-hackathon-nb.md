@@ -17,14 +17,6 @@ nbhosting:
   title: git pour les cours
 ---
 
-License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
-
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
-
 # utiliser `git` pour les hackathons
 
 lors des hackatons on va vous demander d'exposer le travail du groupe sur github  
@@ -52,4 +44,14 @@ voici une façon de faire
 ```{image} media/github-invite-people.png
 :align: center
 :width: 800px
+```
+
++++
+
+License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
+
+```{code-cell}
+%%python
+from IPython.display import HTML
+HTML(filename="_static/style.html")
 ```

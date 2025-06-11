@@ -14,6 +14,10 @@ language_info:
   name: bash
 ---
 
+# `git` en local : les bases
+
++++
+
 License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
@@ -21,10 +25,6 @@ License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 from IPython.display import HTML
 HTML(filename="_static/style.html")
 ```
-
-# `git` en local : les bases
-
-+++
 
 Une introduction didactique sur une première utilisation du logiciel de gestion de versions `git`.
 
@@ -1563,6 +1563,7 @@ Du coup pour créer la branche `devel` sur le parent de `HEAD` on peut écrire
 $ git branch devel HEAD~
 $ git branch
   devel
+
 * main
 ```
 

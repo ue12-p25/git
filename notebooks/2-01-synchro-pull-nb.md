@@ -14,14 +14,6 @@ language_info:
   name: bash
 ---
 
-License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
-
-```{code-cell}
-%%python
-from IPython.display import HTML
-HTML(filename="_static/style.html")
-```
-
 # synchro entre dépôts : tirer
 
 ````{admonition} lire les vidéos dans Jupyter lab
@@ -32,6 +24,14 @@ assurez-vous d'exécuter toutes les cellules avec *Run* -> *Run All Cells*
 ````
 
 +++
+
+License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
+
+```{code-cell}
+%%python
+from IPython.display import HTML
+HTML(filename="_static/style.html")
+```
 
 ## on contextualise
 
@@ -100,10 +100,6 @@ tags: []
 %%python
 from ipywidgets import Video
 Video.from_file("_static/Clone.mp4", autoplay=False, loop=False)
-```
-
-```{code-cell}
-
 ```
 
 * dans un premier temps on duplique le graphe des commits, y compris le commit courant

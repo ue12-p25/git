@@ -17,6 +17,12 @@ nbhosting:
   title: git pour les cours
 ---
 
++++ {"slideshow": {"slide_type": ""}}
+
+# aperçu de l'implémentation
+
++++
+
 License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
@@ -24,12 +30,6 @@ License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 from IPython.display import HTML
 HTML(filename="_static/style.html")
 ```
-
-+++ {"slideshow": {"slide_type": ""}}
-
-# aperçu de l'implémentation
-
-+++
 
 ce notebook est complètement **optionnel**
 

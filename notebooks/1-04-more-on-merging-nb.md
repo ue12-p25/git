@@ -16,6 +16,10 @@ nbhosting:
   title: la fusion
 ---
 
+# la fusion, et les conflits
+
++++
+
 License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
@@ -23,10 +27,6 @@ License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 from IPython.display import HTML
 HTML(filename="_static/style.html")
 ```
-
-# la fusion, et les conflits
-
-+++
 
 ## on contextualise
 
@@ -319,7 +319,7 @@ ce qui se passe, c'est ceci
 * par contre comme les deux branches ont modifié la ligne de total chacune de leur côté  
   **la fusion ne sait pas quelle version retenir**
 
-voilà, on a créé **un conflit**, et du coup **tout s'arrête**…  
+voilà, on a créé **un conflit**, et du coup **tout s'arrête**…
 
 +++ {"tags": []}
 
@@ -345,6 +345,7 @@ dans quel état est notre dépôt à ce stade ?
 
 * on apprend comme ça que c'est dans `form.txt` que se situe le souci  
   (bon nous on n'a qu'un seul fichier, mais quand il y en a 200 c'est une information intéressante)  
+
 * et `git merge` nous a laissé les conflits **annotés directement dans le code**  
   avec cette forme qui est facile à voir visuellement
 
@@ -471,6 +472,7 @@ certains débutants ne réalisent pas que ces annotations sont vraiment dans le 
 * lorsque les **deux commits** à fusionner sont **parents** l'un de l'autre,
   la fusion n'a **pas besoin de créer** un nouveau commit;     
    c'est ce qu'on appelle une **fusion *fast-forward***
+
 * dans le cas contraire, la **création** d'un commit est **nécessaire**
   * les **modifications disjointes** peuvent être fusionnées **automatiquement**
   * lorsque deux modifications changent la **même zone** de code par contre, la fusion atteint ses limites:

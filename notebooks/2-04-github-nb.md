@@ -16,6 +16,10 @@ nbhosting:
   title: github
 ---
 
+# github
+
++++
+
 License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
@@ -23,10 +27,6 @@ License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 from IPython.display import HTML
 HTML(filename="_static/style.html")
 ```
-
-# github
-
-+++
 
 ## c'est quoi ?
 
@@ -91,9 +91,11 @@ git@github.com:ue12-p25/git.git
 
 * signalons aussi que chaque repo peut être **public** ou **privé**  
   pour la suite, si on ne précise rien, ce sera pour parler de repos publics
+
 * un repo public peut être  
   **lu**, et donc aussi cloné, par tout le monde  
   **écrit** (ou pourra pousser dedans) par une liste finie de gens définie dans les *Settings* du repo (et de l'orga)
+
 * un repo privé quant à lui peut être  
   **lu** et **écrit** par une liste finie de gens (idem)
 

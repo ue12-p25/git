@@ -16,6 +16,12 @@ nbhosting:
   title: rebase
 ---
 
+# rebase
+
+ce notebook est complètement **optionnel**
+
++++
+
 License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
@@ -23,12 +29,6 @@ License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 from IPython.display import HTML
 HTML(filename="_static/style.html")
 ```
-
-# rebase
-
-ce notebook est complètement **optionnel**
-
-+++
 
 ## `rebase` en local
 

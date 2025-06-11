@@ -16,6 +16,10 @@ nbhosting:
   title: "diff\xE9rences pendantes"
 ---
 
+# différences pendantes
+
++++
+
 License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
@@ -23,10 +27,6 @@ License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 from IPython.display import HTML
 HTML(filename="_static/style.html")
 ```
-
-# différences pendantes
-
-+++
 
 ## on contextualise
 
@@ -44,6 +44,7 @@ souvenez-vous qu'on peut
 
 * ajouter d'un seul coup toutes les modifications d'un fichier avec  
   `git add nom-du-fichier`
+
 * mais aussi, ajouter très finement - i.e. ligne par ligne  
   dans ce cas il vaut mieux utiliser une GUI - [voir plus bas, c'est faisable par exemple avec vscode](label-guis)  
   pourquoi on aurait envie de faire ça ? pour ne pas mélanger des modifications qui n'ont rien à voir dans un même commit
@@ -232,6 +233,7 @@ si bien que, selon le cas qui vous concerne parmi ceux listés plus haut, vous p
    qui vous ouvrira votre éditeur avec le message du commit courant
 
 2. si c'est plus profond:
+
    * ajoutez dans l'index les changements qui manquent au commit courant
    * avant de faire ici encore `git commit --amend`
    * vous pouvez même ajouter l'option `--no-edit` si le message était correct

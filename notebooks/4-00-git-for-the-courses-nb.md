@@ -17,6 +17,10 @@ nbhosting:
   title: git pour les cours
 ---
 
+# utiliser `git` pour les cours
+
++++
+
 License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
@@ -24,10 +28,6 @@ License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 from IPython.display import HTML
 HTML(filename="_static/style.html")
 ```
-
-# utiliser `git` pour les cours
-
-+++
 
 on vous conseille de mettre **les notebooks et tout le contenu du cours sur votre
 ordinateur**; pour cela la démarche à suivre est indiquée ci-dessous

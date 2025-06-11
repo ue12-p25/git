@@ -16,6 +16,10 @@ nbhosting:
   title: "r\xE9sum\xE9 (2)"
 ---
 
+# résumé du chapitre précédent
+
++++
+
 License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
@@ -23,10 +27,6 @@ License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 from IPython.display import HTML
 HTML(filename="_static/style.html")
 ```
-
-# résumé du chapitre précédent
-
-+++
 
 ## les remotes
 
