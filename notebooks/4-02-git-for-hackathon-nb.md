@@ -46,10 +46,6 @@ voici une façon de faire
 :width: 800px
 ```
 
-+++
-
-License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
-
 ```{code-cell}
 %%python
 from IPython.display import HTML

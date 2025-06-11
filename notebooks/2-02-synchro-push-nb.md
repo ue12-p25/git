@@ -23,10 +23,6 @@ ce notebook contient des vidéos; si vous le lisez dans Jupyter, pour que les vi
 assurez-vous d'exécuter toutes les cellules avec *Run* -> *Run All Cells*
 ````
 
-+++
-
-License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
-
 ```{code-cell}
 %%python
 from IPython.display import HTML

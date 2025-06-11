@@ -32,10 +32,6 @@ dans tous les cas de figure (avec ou sans *starter code*):
 - le fait d'inviter le prof suffit à le prévenir qu'il y a des choses à aller collecter, pas besoin d'envoyer un mail 
 - **sauf si vous avez un *slug* farfelu** sur `github.com`, car dans ce cas le prof ne pourra pas faire l'association avec votre vrai nom; laissez-lui dans ce cas un mail pour lui dire "le *slug* `PatateChaude` en fait c'est moi Jean Mineur"
 
-+++
-
-License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
-
 ```{code-cell}
 %%python
 from IPython.display import HTML

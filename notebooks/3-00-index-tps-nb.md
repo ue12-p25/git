@@ -19,10 +19,6 @@ nbhosting:
 
 # quelques TPs pour pratiquer `git`
 
-+++
-
-License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
-
 ```{code-cell}
 %%python
 from IPython.display import HTML

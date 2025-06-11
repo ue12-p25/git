@@ -16,10 +16,6 @@ language_info:
 
 # commits & bonnes pratiques
 
-+++
-
-License CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
-
 ```{code-cell}
 %%python
 from IPython.display import HTML
