@@ -27,11 +27,12 @@ concurrency:
   cancel-in-progress: false
 
 
+# this is no longer needed as we serve from info-mines.paris
 # required for MyST
-env:
-  # `BASE_URL` determines the website is served from, including CSS & JS assets
-  # You may need to change this to `BASE_URL: ''`
-  BASE_URL: /${{ github.event.repository.name }}
+# env:
+#   # `BASE_URL` determines the website is served from, including CSS & JS assets
+#   # You may need to change this to `BASE_URL: ''`
+#   BASE_URL: /${{ github.event.repository.name }}
 
 
 jobs:
