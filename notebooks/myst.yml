@@ -34,7 +34,8 @@ site:
   #     url: https://mystmd.org/guide
   domains: []
   options:
-    favicon: media/favicon-p25.svg
+    # see the comment on this in the numerique course
+    favicon: media/favicon-p25.svg.ico
     logo: media/logo-git-square.svg
     # very visible in the header
     logo_text: "UE12: git"
