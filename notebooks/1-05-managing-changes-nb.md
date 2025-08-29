@@ -67,6 +67,7 @@ dans ce notebook on résume les commandes utiles pour visualiser / gérer / aban
 dans un premier temps on revoit, sous une forme visuelle, les commandes qu'on a déjà pratiquées
 
 +++
+***
 
 #### un dépôt propre
 
@@ -77,6 +78,7 @@ on utilisera ce type de présentation dans la suite :
 ```
 
 +++
+***
 
 #### `git status` et `git diff`
 
@@ -101,6 +103,7 @@ en général le dépôt n'est pas propre, on peut voir les (deux familles de) di
 le changement que je sauve δ s'ajoute en fait aux différences existantes, qui s'accumulent évidemment.
 
 +++
+***
 
 #### `git add`
 
@@ -111,6 +114,7 @@ le changement que je sauve δ s'ajoute en fait aux différences existantes, qui 
 la différence apparait maintenant dans la deuxième zone (*staged changes*)
 
 +++
+***
 
 #### `git commit`
 
@@ -154,6 +158,7 @@ ou encore, pendant le debug on a ajouté 250 instructions `print()`, qu'on veut 
 ````
 
 +++ {"tags": []}
+***
 
 #### `git restore --staged`
 
@@ -164,6 +169,7 @@ pour annuler le `add` : si un changement a été promu dans l'index, on peut le
 ```
 
 +++ {"tags": []}
+***
 
 #### `git restore`
 
@@ -174,6 +180,7 @@ pour jeter les changements non indexés
 ```
 
 +++ {"tags": []}
+***
 
 #### `git restore --worktree --staged`
 
@@ -200,6 +207,7 @@ dans les versions anciennes de git, i.e. avant que l'on introduise `git restore`
 `````
 
 +++ {"tags": []}
+***
 
 ### refaire un commit avec `git commit --amend`
 
@@ -235,7 +243,8 @@ si bien que, selon le cas qui vous concerne parmi ceux listés plus haut, vous p
 
 ````{admonition} on ne modifie pas le commit
 
-remarquez qu'avec `--amend` on ne **modifie pas** le commit courant (les commits sont **immutables**), on en **crée** simplement **un nouveau**  
+remarquez qu'avec `--amend` on ne **modifie pas** le commit courant (les commits sont **immutables**):  
+on en **crée** simplement **un nouveau**  
 le premier reste dans le repo, mais généralement on ne le "voit plus" car il est inatteignable, et il sera nettoyé au bout de quelque temps
 ````
 
@@ -248,8 +257,9 @@ signalons enfin qu'il existe plein d'outils graphiques pour simplifier l'utilisa
 
 * avoir en permanence une **représentation bien à jour** de l'état du dépôt
 * gérer plus **simplement le workflow** qu'on a détaillé plus haut  
-  (ajouter, annuler l'ajout, jeter complètement, les changements) et cela finement (ligne par ligne si nécessaire)
-  sans avoir à mémoriser toutes les commandes pour le faire
+  (ajouter, annuler l'ajout, jeter complètement, les changements)  
+* et tout cela finement (ligne par ligne si nécessaire)  
+* sans avoir à mémoriser toutes les commandes pour le faire
 
 voici rapidement quelques outils gratuits qui sont bien pratiques
 
