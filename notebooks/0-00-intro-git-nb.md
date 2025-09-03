@@ -62,15 +62,23 @@ Signalons en effet que git est utilisé **aussi** pour notamment :
 En réalité il potentiellement utile pour pratiquement **tout ce qui est numérique**  
 même si clairement **il s'applique le mieux** à des contenus **de nature textuelle**
 
+***
+
 +++
 
-## d'autres ressources pour ce cours
+## publication & ressources
 
-* en version HTML statique :  
-  <https://ue12-p25-git.readthedocs.io/>
+* ce cours est publié sur [https://git.info-mines.paris](https://git.info-mines.paris) ![the badge](https://github.com/ue12-p25/git/actions/workflows/myst-to-pages.yml/badge.svg)
 
-* les sources de ce cours :
+* les sources de ce cours sur github:
   <https://github.com/ue12-p25/git>
-  
+
 * également utile, une *cheat sheet* éditée par github :  
   <https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf>
+
++++
+
+## licence
+
+tout le contenu de ce cours est sous licence CC BY-NC-ND, Valérie Roy & Thierry
+Parmentelat
