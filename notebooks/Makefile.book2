@@ -1,10 +1,10 @@
 # in development, use myst start
 
 book:
-	myst build --execute --html
+	npx myst build --execute --html
 
 book-dev:
-	myst start --execute
+	npx myst start --execute
 
 book-clean:
 	rm -rf _build
