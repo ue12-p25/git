@@ -112,15 +112,15 @@ html article main .relative.group[data-mdast-node-id] {
             content: ' ∅ no output ∅ ';
         }
         font-size: xx-small;
-        padding: 0px 1rem;
+        padding: 0px 1em;
 
         border-color: var(--myst-output-empty-border-color);
-        margin-bottom: 0.6rem;
+        margin-bottom: 1rem;
     }
 
     border-radius: var(--myst-code-border-radius);
     margin-top: 0px;
-    padding: 0.25em 1rem;
+    padding: 0.25em 1em;
     border-width: var(--myst-code-border-width);
     border-color: var(--myst-output-border-color);
     background-color: var(--myst-output-background-color);
