@@ -55,7 +55,7 @@ Après plusieurs décennies de tâtonnements, et des strates d'outils dédiés �
 Signalons en effet que git est utilisé **aussi** pour notamment :
 
 * le processus d'**élaboration des lois**:
-  * <https://datacoalition.org/blog/12844184>
+  * <https://datafoundation.org/news/blogs/335/335-Version-Control-for-Law-Tracking-Changes-in-the-US-Congress>
 * la mise à disposition **d'open-data**:
   * <https://github.com/collections/open-data>
 
