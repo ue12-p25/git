@@ -76,16 +76,12 @@ mais pour commencer, voyons `git clone`; on a rencontré et même déjà utilis�
 
 ````
 
-```{code-cell}
----
-slideshow:
-  slide_type: ''
-tags: []
----
-%%python
-from ipywidgets import Video
-Video.from_file("_static/Clone.mp4", autoplay=False, loop=False)
+````{admonition} vidéo: cloner un dépôt
+:class: dropdown seealso
+<!-- Clone.mp4 -->
+```{iframe} https://www.youtube.com/embed/qBa1S5STOHI?rel=0&amp;controls=1
 ```
+````
 
 * dans un premier temps on duplique le graphe des commits, y compris le commit courant
 * à partir de quoi on peut remplir l'index et les fichiers
@@ -188,13 +184,12 @@ et commençons par regarder son fonctionnement illustré dans une vidéo (dans l
 on fait ici l'hypothèse qu'on n'a pas touché à notre repo local, et que donc il est propre
 ````
 
-```{code-cell}
-:tags: [remove-input]
-
-%%python
-from ipywidgets import Video
-Video.from_file("_static/Pull.mp4", autoplay=False, loop=False)
+````{admonition} vidéo: comment ça marche `git pull`
+:class: dropdown seealso
+<!-- Pull.mp4 -->
+```{iframe} https://www.youtube.com/embed/oXNhud3gCIs?rel=0&amp;controls=1
 ```
+````
 
 pour résumer, on peut dire que
 
@@ -274,13 +269,12 @@ la troisième chose à retenir est que, puisque `pull` finit par faire un `merge
 
 dans cette vidéo on va illustrer le cas où, cette fois, j'ai fait un commit de mon coté avant de `pull`:
 
-```{code-cell}
-:tags: [remove-input]
-
-%%python
-from ipywidgets import Video
-Video.from_file("_static/PullDiverge.mp4", autoplay=False, loop=False)
+````{admonition} vidéo: un pull alors qu'on a divergé
+:class: dropdown seealso
+<!-- PullDiverge.mp4 -->
+```{iframe} https://www.youtube.com/embed/x87tFAaVG2g?rel=0&amp;controls=1
 ```
+````
 
 ### *tracking branch* (optionnel)
 

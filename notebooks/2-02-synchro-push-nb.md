@@ -66,25 +66,23 @@ sans discuter plus avant de la pertinence de ce choix, voyons d'abord comment to
 
 cette vidéo décortique le fonctionnement de `push` dans un cas simple
 
-```{code-cell}
-:tags: [remove-input]
-
-%%python
-from ipywidgets import Video
-Video.from_file("_static/Push.mp4", autoplay=False, loop=False)
+````{admonition} vidéo: comment ça marche `git push`
+:class: dropdown seealso
+<!-- Push.mp4 -->
+```{iframe} https://www.youtube.com/embed/pXs3Gl1chFc?rel=0&amp;controls=1
 ```
+````
 
 ## mais attention le push peut coincer !!!
 
 dans la suite de la vidéo on envisage un cas (**très fréquent**) où le push **ne peut pas se faire** avant que l'on ne fasse d'abord un `pull`
 
-```{code-cell}
-:tags: [remove-input]
-
-%%python
-from ipywidgets import Video
-Video.from_file("_static/NeedPull.mp4", autoplay=False, loop=False)
+````{admonition} vidéo: un push qui coince
+:class: dropdown seealso
+<!-- NeedPull.mp4 -->
+```{iframe} https://www.youtube.com/embed/x87tFAaVG2g?rel=0&amp;controls=1
 ```
+````
 
 ## *tracking branch* (suite et fin, toujours optionnel)
 

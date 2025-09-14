@@ -198,23 +198,21 @@ Car il nous faut la possibilité d'ajouter dans l'index, non pas tout le contenu
 
 On a déjà parlé de cette feature dans vs-code, pour rappel:
 
-```{code-cell}
-:tags: [remove-input]
-
-%%python
-from ipywidgets import Video
-Video.from_file("_static/vscode-line-by-line.mp4", autoplay=False, loop=False)
+````{admonition} vidéo: ajouter des changements ligne par ligne
+:class: dropdown seealso
+<!-- vscode-lines-by-lines.mp4 -->
+```{iframe} https://www.youtube.com/embed/W9pYNXCZXbk?rel=0&amp;controls=1
 ```
+````
 
 Pour information, on peut faire ce genre de choses également à partir d'outils 'graphiques' autour de `git`, comme par exemple avec `SourceTree` (qui est dispo sur Windows et Mac, malheureusement pas sur linux..)
 
-```{code-cell}
-:tags: [remove-input]
-
-%%python
-from ipywidgets import Video
-Video.from_file("_static/sourcetree-line-by-line.mp4", autoplay=False, loop=False)
+````{admonition} vidéo: ajouter des changements ligne par ligne avec SourceTree
+:class: dropdown seealso
+<!-- sourcetree-line-by-line.mp4 -->
+```{iframe} https://www.youtube.com/embed/CciZ_ZAzAgc?rel=0&amp;controls=1
 ```
+````
 
 ## le point de vue de xkcd sur les messages :)
 

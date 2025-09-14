@@ -721,23 +721,19 @@ il faut insister également sur le fait que, lorsqu'on parle de l'index
 
 si on devait imaginer un *workflow* sans index, ça donnerait ceci :
 
-```{code-cell}
-:tags: [remove-input]
-
-%%python
-from ipywidgets import Video
-Video.from_file("_static/NoIndex.mp4", autoplay=False, loop=False)
-```
+````{admonition} vidéo: un git sans index ?
+:class: dropdown seealso
+<!-- NoIndex.mp4 -->
+```{iframe} https://www.youtube.com/embed/qBa1S5STOHI?rel=0&amp;controls=1
+````
 
 grâce à l'index on peut choisir quels changements mettre ou pas dans le commit :
 
-```{code-cell}
-:tags: [remove-input]
-
-%%python
-from ipywidgets import Video
-Video.from_file("_static/WithIndex.mp4", autoplay=False, loop=False)
-```
+````{admonition} vidéo: l'index permet + de flexibilité
+:class: dropdown seealso
+<!-- WithIndex.mp4 -->
+```{iframe} https://www.youtube.com/embed/qBa1S5STOHI?rel=0&amp;controls=1
+````
 
 ## deuxième commit
 
@@ -1264,13 +1260,12 @@ quoi qu'il en soit, on peut maintenant réajouter les changements, avec .. eh ou
 
 enfin sachez qu'on peut parfaitement ajouter/enlever dans l'index des changements au niveau de granularité de la ligne ! voici une session pour vous donner une idée;
 
-```{code-cell}
-:tags: [remove-input]
-
-%%python
-from ipywidgets import Video
-Video.from_file("_static/vscode-line-by-line.mp4", autoplay=False, loop=False)
+````{admonition} vidéo: ajouter des changements ligne par ligne
+:class: dropdown seealso
+<!-- vscode-lines-by-lines.mp4 -->
+```{iframe} https://www.youtube.com/embed/W9pYNXCZXbk?rel=0&amp;controls=1
 ```
+````
 
 ça n'est clairement pas crucial à ce stade de maitriser cette technique, mais sachez que c'est quelque chose que les codeurs font de manière totalement routinière, car ça permet de faire **des commits qui ont du sens**, et non pas un ramassis de modifications qui ne sont pas reliées entre elles; on en reparlera...
 
@@ -1289,13 +1284,13 @@ Maintenant qu'on a bien compris les deux classes de changements dits "pendants",
 
 * ou avec vs-code, si vous voulez expérimenter plus en avant l'usage de cet outil
 
-```{code-cell}
-:tags: [remove-input]
-
-%%python
-from ipywidgets import Video
-Video.from_file("_static/vscode-commit.mp4", autoplay=False, loop=False)
+````{admonition} vidéo: faire un commit avec vs-code
+:class: dropdown seealso
+<!-- vscode-commit.mp4 -->
+```{iframe} https://www.youtube.com/embed/ZZfmcgMH2fw?rel=0&amp;controls=1
 ```
+````
+
 
 dans les deux cas, utilisez  `git status` et `git log` pour vérifier que votre dossier est identique au dernier commit (vous n'avez plus de changements pendants, dans aucune des deux catégories de changements) et que vous avez 4 commits
 
