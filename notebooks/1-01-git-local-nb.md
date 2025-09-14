@@ -20,15 +20,6 @@ language_info:
 
 Une introduction didactique sur une première utilisation du logiciel de gestion de versions `git`.
 
-````{admonition} lire les vidéos dans Jupyter lab
-:class: tip
-
-ce notebook contient des vidéos; si vous le lisez dans Jupyter, pour que les vidéos s'affichent:  
-assurez-vous d'exécuter toutes les cellules avec *Run* -> *Run All Cells*
-````
-
-+++
-
 ````{admonition} une sandbox avec learngitbranching.js
 :class: tip
 
@@ -36,6 +27,13 @@ pour expérimenter de manière interactive et graphique, on pourra avoir recours
 
 <a href="https://learngitbranching.js.org/?NODEMO" target="_"><code>https://learngitbranching.js.org/?NODEMO</code></a>
 
+````
+
+````{admonition} pour bien lire les vidéos dans Jupyter lab
+:class: tip dropdown admonition-small
+
+ce notebook contient des vidéos; si vous le lisez dans Jupyter, pour que les vidéos s'affichent:  
+assurez-vous d'exécuter toutes les cellules avec *Run* -> *Run All Cells*
 ````
 
 +++

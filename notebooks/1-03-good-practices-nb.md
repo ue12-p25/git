@@ -18,14 +18,7 @@ language_info:
 
 +++
 
-Une notebook très court, où on revient rapidement sur la bonne façon de découper son code en commits, et de rédiger les messages qui vont avec.
-
-````{admonition} dans jupyter lab: pour lire les vidéos
-:class: tip
-
-ce notebook contient des vidéos; si vous le lisez dans Jupyter, pour que les vidéos s'affichent:  
-assurez-vous d'exécuter toutes les cellules avec *Run* -> *Run All Cells*
-````
+Un notebook très court, où on revient rapidement sur la bonne façon de découper son code en commits, et de rédiger les messages qui vont avec.
 
 +++
 

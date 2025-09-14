@@ -16,13 +16,6 @@ language_info:
 
 # synchro entre dépôts : pousser
 
-````{admonition} lire les vidéos dans Jupyter lab
-:class: tip
-
-ce notebook contient des vidéos; si vous le lisez dans Jupyter, pour que les vidéos s'affichent:  
-assurez-vous d'exécuter toutes les cellules avec *Run* -> *Run All Cells*
-````
-
 +++
 
 ## on contextualise
