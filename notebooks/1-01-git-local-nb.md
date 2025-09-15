@@ -732,7 +732,7 @@ grâce à l'index on peut choisir quels changements mettre ou pas dans le commit
 ````{admonition} vidéo: l'index permet + de flexibilité
 :class: dropdown seealso
 <!-- WithIndex.mp4 -->
-```{iframe} https://www.youtube.com/embed/qBa1S5STOHI?rel=0&amp;controls=1
+```{iframe} https://www.youtube.com/embed/8SmIMtyEup4?rel=0&amp;controls=1
 ````
 
 ## deuxième commit
