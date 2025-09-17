@@ -17,7 +17,9 @@ nbhosting:
   title: quelques TPs
 ---
 
-# quelques TPs pour pratiquer `git`
+# index des TPs
+
+quelques TPs pour pratiquer `git`
 
 +++ {"tags": []}
 

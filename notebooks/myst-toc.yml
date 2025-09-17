@@ -21,9 +21,7 @@ project:
       children:
         - pattern: 2-*-nb.md
 
-    - title: index des TPs
-      children:
-        - pattern: 3-*-nb
+    - file: 3-00-index-tps-nb.md
 
     - title: git pour les cours
       children:
