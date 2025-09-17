@@ -77,7 +77,7 @@ gitGraph
 
 dans ce genre de cas, il arrive qu'on corrige sur `main` un bug important (voyez le commit marqué d'une croix ci-dessus); et du coup on veut pouvoir facilement appliquer ce fix sur les deux branches - mais bien entendu sans prendre les autres commits qui sont sur `main`
 
-c'est exactement que sert `cherry-pick`; ce qu'on ferait dans ce cas-là ce serait
+c'est exactement à ça que sert `cherry-pick`; ce qu'on ferait dans ce cas-là ce serait
 
 ```bash
 git switch 3.x
@@ -165,7 +165,7 @@ dans ce cas, on ferait
 :class: error
 
 * **attention** car ça remet à la fois les fichiers, l'index et le commit à l'état du commit n-1, c'est donc **très intrusif**
-* et aussi, essayez d'imaginer les conséquences de cette idée si vous avez déja poussé le "not a good idea" sur par exemple github..
+* et aussi, essayez d'imaginer les conséquences de cette idée si vous avez déja poussé sur github le "not a good idea" ..
 ````
 
 mais bon, admettons que tout est clair, si on fait ça on se retrouve avec 
@@ -181,15 +181,15 @@ gitGraph
 
 ### faire un nouveau commit qui défait le dernier
 
-du coup il y a autre alternative, qui consiste à enregistrer le fait qu'on a essayé ça et que ça n'a pas marché  
+mais si vous avez déjà poussé sur github, alors il y a autre alternative, qui consiste à enregistrer le fait qu'on a essayé ça et que ça n'a pas marché  
 c'et-à-dire à remettre un nouveau commit qui revient en arrière  
 et pour faire ça on ferait simplement
 `git revert HEAD`
 
-en effet, comme on l'a déjà mentionné la logique de `git revert` c'est un peu celle de cherry-pick, mais à l'envers  
-ici je vais défaire le commit courant, encore un abus de langage: je vais appliquer le changement entre `HEAD` et son parent, mais à l'envers
+comme on l'a déjà mentionné la logique de `git revert` c'est un peu celle de cherry-pick, mais à l'envers  
+ici je vais **défaire le commit courant**, encore un abus de langage: je vais appliquer le changement entre `HEAD` et son parent, mais à l'envers
 
-puisqu'on crée un nouveau commit, git revert va nous demander un message, disons qu'on met "undo the wrong idea", et dans ce cas de figure on se retrouve avec
+puisqu'on crée un nouveau commit, `git revert` va nous demander un message, on pourrait mettre `"undo the wrong idea"`, et on se retrouve alors avec
 
 ```{mermaid}
 gitGraph
@@ -200,10 +200,10 @@ gitGraph
     commit id: "undo the wrong idea" type:HIGHLIGHT
 ```
 
-dans lequel le contenu des commit `HEAD` et `HEAD~2` est identique  
-mais cette approche a l'avantage de, à nouveau, laisser dans l'historique une trace de cette expérience
+dans lequel le contenu des commit `HEAD` et `HEAD~2` (was good) est identique  
+à nouveau cette approche a l'avantage de laisser dans l'historique une trace de cette expérience
 
 ````{admonition} pas forcément le dernier
 
-ici on a vu comment défaire le tout dernier commit, mais on peut tout aussi bien défaire un commit plus ancien naturellement
+ici on a vu comment défaire le tout dernier commit, mais on peut tout aussi bien défaire un commit plus ancien naturellement, je vous laisse imaginer comment on ferait
 ````
