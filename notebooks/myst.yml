@@ -42,4 +42,4 @@ site:
     style: "_static/style.css"
 
 extends:
-  - _myst-toc.yml
+  - myst-toc.yml
