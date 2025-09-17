@@ -66,7 +66,7 @@ sans discuter plus avant de la pertinence de ce choix, voyons d'abord comment to
 
 cette vidéo décortique le fonctionnement de `push` dans un cas simple
 
-````{admonition} vidéo: comment ça marche `git push`
+````{admonition} vidéo: comment ça marche git push
 :class: dropdown seealso
 <!-- Push.mp4 -->
 ```{iframe} https://www.youtube.com/embed/pXs3Gl1chFc?rel=0&amp;controls=1

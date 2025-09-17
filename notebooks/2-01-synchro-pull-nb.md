@@ -184,7 +184,7 @@ et commençons par regarder son fonctionnement illustré dans une vidéo (dans l
 on fait ici l'hypothèse qu'on n'a pas touché à notre repo local, et que donc il est propre
 ````
 
-````{admonition} vidéo: comment ça marche `git pull`
+````{admonition} vidéo: comment ça marche git pull
 :class: dropdown seealso
 <!-- Pull.mp4 -->
 ```{iframe} https://www.youtube.com/embed/oXNhud3gCIs?rel=0&amp;controls=1
