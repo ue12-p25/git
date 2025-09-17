@@ -55,22 +55,31 @@ on crée délibérément un conflit pour savoir reconnaître les symptômes, et 
 
 travail individuel
 
-1. créer un repo, ajouter dedans un commit avec un `README.md` vide
-1. faites une modification avec vs-code
-1. ajoutez-la dans l'index
-1. vous changez d'avis, vous ne la voulez plus dans l'index, défaites 3.
-1. et en fait vous ne voulez plus du tout de cette modife, vous la jetez complètement
-1. on vérifie avec `git status` que le repo est propre
+1. créer un repo, **ajouter dedans un commit** avec un `README.md` contenant une seule ligne (typiquement on un titre en markdown)
+1. faites une modification (ajouter du texte) avec vs-code
+1. **ajoutez-la dans l'index**
+1. faites une autre modification (ajouter du texte), toujours avec vs-code
+1. à ce stade vous avez deux classes de modifications: staged ou non  
+   observez-les avec `git status` et `git diff` (ou équivalent dans vs-code)
+1. vous changez d'avis, vous voulez **défaire l'action que vous aviez faite dans 3.**  
+(c'est-à-dire retirer la modife de l'index mais pas la jeter complètement)
+1. pareil que 5., assurez-vous que vous arrivez bien à visualiser l'état du repo; normalement vous n'avez plus qu'une seule classe de changements, *non staged*
+1. enfin vous changez envore d'avis et vous voulez **jeter complètement les modifications** en souffrance, vous les jetez complètement
+1. on vérifie visuellement qu'il n'y a plus de modification pendante
 ````
 
-on peut envisager deux versions de ce TP
-
-* la plus simple: on fait tout sous vs-code
-  * pour 3., il faut chercher **`+`**
-  * et assez logiquement pour 4, il faut chercher **`-`**
-  * pour 5. le verbe est *discard*
-* un peu moins simple: on fait la modife (2.) avec vs-code, et le reste dans le terminal
-  * voyez le notebook **`1-05`** pour les commandes à utiliser
+````{admonition} on peut envisager deux versions de ce TP
+:class: warning
+```{admonition} 1. on fait **tout sous vs-code**
+c'est sans doute la plus simple:
+  * pour 3., il faut chercher une icone **+**
+  * et assez logiquement pour 6, il faut chercher l'icone **-**
+  * pour 8. le verbe est *discard*
+```
+```{admonition} 2. dans le terminal
+* voyez le notebook **`1-05`** ***"différences pendantes"*** pour les commandes à utiliser
+```
+````
 
 +++
 
@@ -111,8 +120,7 @@ une fois que c'est prêt vous devrez visiter une URL **dans le genre de**
 ```{admonition} à faire par le prof
 :class: dropdown
 
-les instructions pour préparer le TP sont dans  
-`https://github.com/ue12-p25/git-tp-clone-pull-for-teacher`
+les instructions pour préparer le TP sont ici <https://github.com/ue12-p25/git-tp-clone-pull-for-teacher/blob/main/README-teacher.md>
 ```
 ````
 
