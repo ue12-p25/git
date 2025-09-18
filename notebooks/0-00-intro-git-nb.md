@@ -23,10 +23,10 @@ nbhosting:
 
 ## un survol en slides
 
-Pour les néophytes, [voici un slideshow](media/kn2-introduction-git.pdf) pour
-illustrer rapidement **le besoin**, et **les cas d'usage** les plus simples;
-[accessible aussi
-ici](https://github.com/ue12-p25/git/raw/main/notebooks/media/kn2-introduction-git.pdf)
+Pour les néophytes, [voici un slideshow pour
+illustrer rapidement **le besoin**, et **les cas d'usage** les plus simples](media/kn2-introduction-git.pdf)
+<!-- [accessible aussi
+ici](https://github.com/ue12-p25/git/raw/main/notebooks/media/kn2-introduction-git.pdf) -->
 
 ````{admonition} pour lire le PDF
 :class: tip
