@@ -26,6 +26,7 @@ project:
     - title: git pour les cours
       children:
         - pattern: 4-*-nb.md
+
     - title: optionnel
       children:
         - pattern: 5-*-nb.md
