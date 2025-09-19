@@ -13,87 +13,91 @@ language_info:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
-nbhosting:
-  title: git pour les cours
 ---
 
-# utiliser `git` pour les cours
+# cloner un cours
 
 +++
 
-on vous conseille de mettre **les notebooks et tout le contenu du cours sur votre
-ordinateur**; pour cela la démarche à suivre est indiquée ci-dessous
+pour certains cours, on vous conseille de mettre **tout le contenu du cours sur
+votre ordinateur**; pour cela la démarche à suivre est indiquée ci-dessous
 
-pour rappel également, dans la vidéo suivante on a fait une micro-démo
+```{admonition} et si ça évolue ?
+:class: dropdown
+
+nous mettons régulièrement à jour les cours; du coup
+il peut être nécessaire de mettre le cours à jour **tout en conservant votre
+travail**, [c'est ce qu'on aborde dans la dernière partie ci-dessous](label-pull-course)
+```
+
+```{admonition} une vidéo de présentation
+:class: dropdown tip
+
+pour rappel, dans la vidéo suivante on a fait une micro-démo
 de l'environnement en action
 <https://www.youtube.com/watch?v=i_ZcP7iNw-U>
-
-attention, nous mettons régulièrement à jour les notebooks chaque semaine; du
-coup pour garder votre travail **et** une version à jour, il faut *pull* le dépôt
-distant; on aborde aussi cette étape [un peu plus bas](label-pull-course)
+```
 
 +++
 
 ## configurer `git`
 
-+++
-
-reportez-vous au cours d'introduction pour vous assurer, si besoin, que vous
-avez bien configuré git
-
-pour rappel, il est nécessaire de configurer
-
-* vos nom/prénom et adresse e-mail
-* l'éditeur à utiliser lors des commits (pour nous: vs-code)
-* la clé ssh
-* et quelques autres détails...
+en principe on a configuré git en début d'année  
+mais en cas de besoin reportez-vous [au cours d'introduction](https://intro.info-mines.paris/1-1-installations/#-configuration-git)
 
 +++
 
 ## au début du cours
 
-### cloner les notebooks sur son ordinateur
+### cloner un cours sur son ordinateur
 
-* aller sur l'interface `Git Bash`
-* se déplacer (avec les commandes `pwd` et `ls` et `cd`) dans le dossier souhaité
-* une fois dans le dossier où vous souhaitez cloner les notebooks  
-  (par exemple `/Users/jeanmineur/git/ue12-p25`), faire
+ou n'importe quel repo sur github - ça marche aussi pour certains TPs:
 
-  ```bash
-  git clone git@github.com:ue12-p25/numerique.git
-  ```
-  pour trouver la bonne URL, regardez comment on fait dans la vidéo  
-  en faisant bien attention de choisir le mode `SSH` comme ceci:
-
+* dans un terminal `Git Bash`
+* se déplacer (avec les commandes `cd`, `pwd` et `ls`) dans le dossier souhaité
+* une fois dans le bon dossier, il va falloir faire un `git clone`  
+  et pour trouver le bon URL, vous
+  * allez sur la page du repo sur github, [par exemple ici](https://github.com/ue12-p25/numerique)
+  * vous copiez dans le presse-papier l'URL du repo - en prenant bien SSH  
   ```{image} media/github-choose-ssh.png
   :width: 500px
   :align: center
+  ```
+  * et vous utilisez cela pour taper une commande qui ressemble à ceci
+  ```bash
+  #         cette partie est copiée depuis github.com
+  #         ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+  git clone git@github.com:ue12-p25/numerique.git
   ```
 
 * un dossier va être créé, ici il s'appelle `numerique`  
   (si vous préférez un autre nom, ajoutez le à la commande ci-dessus)
 
-* dans le dossier choisi, vous allez trouver tout le contenu du cours, y compris
-  les  notebooks ! ils sont généralement dans un sous-dossier `notebooks/`
+* dans le dossier choisi, vous allez trouver tout le contenu du cours; les notebooks, lorsqu'il y en a , sont généralement dans un sous-dossier `notebooks/`
 
-en naviguant sur github et plus particulièrement sur la page de l'orga
-ue12-p25 (<https://github.com/ue12-p25/>), vous pouvez voir l'ensemble des
+### cours disponibles
+
+en naviguant sur github et plus particulièrement [sur la page de l'orga
+ue12-p25](https://github.com/ue12-p25/), vous pouvez voir l'ensemble des
 répertoires des cours d'informatique que vous avez eu jusque-là ! 
 
 ````{admonition} et au second semestre ?
 au second semestre les cours seront dans l'orga <https://github.com/ue22-p25/>
 ````
 
-+++
-
 ### installer les dépendances
 
-* *optionnel*: vous pouvez aussi créer un environnement virtuel en lui donnant
+````{admonition} optionnel: un environnement virtuel
+:class: dropdown
+
+* *optionnel*: vous pouvez créer un environnement virtuel en lui donnant
   un nom (et éventuellement la version de `python` que vous voulez);
   ici je choisis de créer un environnement virtuel qui s'appelle aussi `numerique`
 
   ```bash
-  conda create -n numerique python=3.12
+  conda create -n numerique python=3.13
+  # ou bien, pour les cours de S2 on pourra faire
+  conda create -n frontend python=3.13 conda-forge::nodejs=24
   ```
 
 * *optionnel*: si vous utilisez un système d'environnements virtuels, prenez
@@ -103,20 +107,13 @@ au second semestre les cours seront dans l'orga <https://github.com/ue22-p25/>
   ```bash
   conda activate numerique
   ```
+````
 
-* dans le dossier du cours se trouve un fichier `requirements.txt`  
+* si le dossier du cours contient un fichier `requirements.txt`  
   allez dans ce dossier et tapez
 
   ```bash
   pip install -r requirements.txt
-  ```
-
-* a minima il vous faut avoir installé `jupyter` et `jupytext`  
-  qui devraient en principe être installés à ce stade; si ce n'est pas le cas,
-  faites
-
-  ```bash
-  pip install jupyter jupytext
   ```
 
 +++
@@ -136,7 +133,7 @@ au second semestre les cours seront dans l'orga <https://github.com/ue22-p25/>
 (label-pull-course)=
 ## mettre à jour sa version locale
 
-avant chaque nouveau cours, comme le prof a pu faire quelques petits changements, il est utile de mettre à jour votre dossier de cours; et pour cela:
+avant chaque nouveau cours, comme le prof a pu faire quelques petits changements, il peut être utile de mettre à jour votre dossier de cours; et pour cela:
 
 * lancer `Git Bash`
 * vous rendre dans le dossier local où vous avez cloné le répertoire  

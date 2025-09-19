@@ -17,7 +17,7 @@ nbhosting:
   title: git pour les cours
 ---
 
-# utiliser `git` pour les hackathons
+# `git` pour les hackathons
 
 lors des hackatons on va vous demander d'exposer le travail du groupe sur github  
 voici une façon de faire
@@ -34,7 +34,7 @@ voici une façon de faire
     - **au contraire** choisissez de créer **un repo vide** (pas de README, ni aucun autre contenu)
     - et suivez la recette affichée par github pour pousser ce repo sur github
     ```
-- une fois le repo créé sur github, il peut être cloné par tous les élèves du groupe (y compris `jeanmineur`)
+- une fois le repo créé sur github (et contenant au moins un commit), il peut être cloné par tous les élèves du groupe (y compris `jeanmineur`)
 - il reste alors simplement au propriétaire du groupe à donner les droits d'écriture aux autres élèves
   pour cela:
   - il les ajoute dans le repo (voir figure)

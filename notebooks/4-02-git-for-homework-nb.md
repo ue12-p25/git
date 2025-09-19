@@ -17,14 +17,14 @@ nbhosting:
   title: git pour les cours
 ---
 
-# utiliser `git` pour les devoirs
+# `git` pour les devoirs
 
 vous serez également amenés à utiliser github pour rendre vos devoirs;
 de cette façon votre professeur pourra avoir toujours accès à votre dernière version
 
 ````{admonition} pas de rendu par mail
 
-cette façon de faire est largement préférable à un envoi par mail, qui demande pas mal de manipulations manuelles et fastidieuses, aussi dans la plupart des cas le rendu par mail est en général réservé aux situations exceptionnelles
+cette façon de faire est largement préférable à un envoi par mail, qui demande pas mal de manipulations manuelles et fastidieuses, aussi dans la plupart des cas le rendu par mail est réservé aux situations exceptionnelles
 ````
 
 dans tous les cas de figure (avec ou sans *starter code*):
@@ -44,7 +44,7 @@ la façon de faire dépend dans tous les cas de votre professeur, mais voici un 
 - au début du cours, vous créez sur github un repo qui va servir tout au long du cours
   par exemple `https://github.com/jeanmineur/numerique-homework`
   qui vous servira à exposer tous les devoirs que vous ferez pendant le cours de PE
-- pour les devoirs on vous demande de **créer le repo privé**
+- pour les devoirs on vous demande de **créer ce repo privé**
 - et ensuite pour chaque exercice:
   - vous créez un dossier dans le repo, avec un nom qui désigne l'exercice, par exemple `mandelbrot/` (le prof vous donnera peut-être une consigne précise à ce sujet)
   - vous faites add / commit pendant que vous codez
@@ -56,12 +56,12 @@ quelques conseils dans ce cas de figure:
   (il est possible de le mettre dans un sous-dossier, mais l'expérience prouve que les débutants ont tendance à s'emmêler les pinceaux avec ce genre de setup)
 - cela signifie que vous aurez un layout qui ressemblera à
   ```console
-  /Users/jeanmineur/git/ue12-p25/
-  /Users/jeanmineur/git/ue12-p25/numerique/           # <- le repo du cours
-  /Users/jeanmineur/git/ue12-p25/numerique-homework/  # <- le repo des exercices
+  /Users/jeanmineur/cours-info/
+  /Users/jeanmineur/cours-info/numerique/           # <- le repo du cours
+  /Users/jeanmineur/cours-info/numerique-homework/  # <- le repo des exercices
   ```
 - et du coup pour faire un TP:
-  - vous commencez par aller (avec `cd`) dans le dossier `git/ue12-p25/numerique-homework`
+  - vous commencez par aller (avec `cd`) dans le dossier `cours-info/numerique-homework`
   - vous y créez le dossier de l'exercice, genre
     `mkdir mandelbrot/`
   - vous y allez
@@ -81,8 +81,8 @@ c'est finalement plus simple ici, puisqu'il y a déjà un repo constitué, mais 
 * comme ci-dessus, c'est sans doute une bonne idée de mettre votre repo de devoirs **à coté du cours**  
   e.g.
   ```
-  /Users/jeanmineur/git/ue22-p25/web/
-  /Users/jeanmineur/git/ue22-p25/web-xkcd
+  /Users/jeanmineur/cours-info/web/
+  /Users/jeanmineur/cours-info/web-xkcd
   ```
 
 * il s'agit donc de dupliquer le repo de départ, avant d'y ajouter votre contribution  
@@ -103,8 +103,9 @@ en détails ça donnerait ceci
 
 - vous allez sur la page du repo - e.g. <https://github.com/ue22-p25/web-xkcd> - et vous cliquez sur *Fork*
 - cela crée pour vous une copie ici <https://github.com/jeanmineur/web-xkcd>
-- que vous clonez sur votre ordi en faisant, comme d'habitude (copiez-collez l'URL depuis github)
+- que vous clonez sur votre ordi en faisant (vous savez maintenant copier-coller l'URL depuis github)
   ```bash
+  # avec votre id github à vous of course
   git clone git@github.com:jeanmineur/web-xkcd.git
   ```
 - à ce stade vous devez rendre le fork *private* (car comme vous avez *fork* un repo public, le *fork* est public aussi); ça se passe dans la rubrique *Settings*
