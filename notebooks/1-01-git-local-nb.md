@@ -224,7 +224,7 @@ pour commencer, on va afficher la version de `git` qui est installée avec cette
 
 ```bash
 $ git version
-git version 2.30.1
+git version 2.44.1
 ```
 
 si vous n'avez pas exactement la même version, aucun souci, on n'utilisera aucune fonction avancée ni récente de `git`, donc plus ou moins toutes les versions de `git` conviennent pour ce cours.  
@@ -489,12 +489,9 @@ ce qui donne ceci, pour créer notre premier commit
 +++
 
 ```bash
-$ git commit -m"licence+readme"
-[main (root-commit) 01b0604] licence+readme
- 2 files changed, 2 insertions(+)
- create mode 100644 licence.txt
- create mode 100644 readme.md
+git commit -m"licence+readme"
 ```
+qui va répondre
 
 ```{image} media/term-first-commit.png
 :width: 800px
@@ -752,7 +749,10 @@ git add licence.txt
 Puis nous faisons notre deuxième `commit`:
 
 ```bash
-$ git commit -m"informations sur la licence"
+git commit -m"informations sur la licence"
+```
+qui va répondre
+```text
 [main 31c4816] informations sur la licence
 2 files changed, 4 insertions(+)
 ```
@@ -776,8 +776,11 @@ $ git commit -m"informations sur la licence"
 
 Maintenant que nous avons fait deux commits, nous aimerions voir l'historique de notre dépôt. Il existe une commande pour cela qui vous donne la liste des commits avec des informations très importantes; `git log`, c'est le journal de bord, la liste des commits du projet.
 
-```
+```bash
 git log
+```
+qui va afficher
+```text
 commit 31c4816dd90653fc1839b72a4dc0d504656586d9 (HEAD -> main)
 Author: Alice <alice@email.fr>
 Date:   Sat Sep 26 21:54:38 2020 +0200
@@ -941,8 +944,11 @@ la mention `(HEAD -> main)` nous indique que c'est `main` la branche courante
 Puis ajoutons le fichier contenant la factorielle et créons un commit.
 
 ```bash
-$ git add fact.py
-$ git commit -m"première implémentation de factorielle dans le fichier fact.py"
+git add fact.py
+git commit -m"première implémentation de factorielle dans le fichier fact.py"
+```
+qui va nous répondre
+```text
 [main e2c02ca] première implémentation de factorielle dans le fichier fact.py
  1 file changed, 2 insertions(+)
  create mode 100644 fact.py
@@ -991,6 +997,9 @@ Sinon: pas de panique ! On vous redonne ici toutes les commandes qui ont modifi�
 <div style="font-size: 1vw; line-height:1.1;">
 
 ```bash
+# on nettoie les éventuelles scories
+rm -rf my-first-project
+
 # on a créé un répertoire et on s'y est déplacé
 mkdir my-first-project
 cd my-first-project
@@ -1314,7 +1323,7 @@ dans les deux cas, utilisez  `git status` et `git log` pour vérifier que votre 
 Nous commençons à avoir quelques commits, bientôt nous créerons des branches et auront des graphes de `commits` (sans cycles), voilà le moment de montrer l'option `--graph` de la commande `log`.
 
 ```bash
-$ git log --oneline --graph
+git log --oneline --graph
 ```
 
 Alors pour l'instant ça ne fait que d'ajouter une petite étoile sur le coté gauche, mais c'est ça qui nous permettra de bien suivre les branches lorsqu'on en verra ! (*Notons qu'entre une figure et une autre, les `sha-1` peuvent ne pas être cohérents: les figures proviennent de plusieurs essais de repos).*
@@ -1388,7 +1397,7 @@ En fait, il est très important de savoir qu'un commit est par construction **im
 
 C'est pourquoi si on parcourt le graphe en partant de `E`, on peut facilement de proche en proche parcourir tous les autres commits; `E` contient les `SHA-1` de `C` et de `D`, `C` celui de `B`... 
 
-**Mais* en partant de `A` au contraire, on ne peut pas "remonter" dans le graphe, puisqu'il n'y a pas de référence vers ses fils (en arrière).
+**Mais** en partant de `A` au contraire, on ne peut pas "remonter" dans le graphe, puisqu'il n'y a pas de référence vers ses fils (en arrière).
 
 Voilà, vous avez compris: un commit connaît le·s commit·s à partir du ou desquel·s il a été créé et c'est tout, il ne connaîtra pas le·s commit·s qui seront créés à partir de lui.
 
@@ -1524,8 +1533,10 @@ Voyons ça pas à pas. Nous considérons que votre répertoire local est à jour
 La commande `git branch` permet de lister, créer, détruire des branches
 
 ```bash
-$ git branch
-
+git branch
+```
+qui affiche à ce stade
+```text
 * main
 ```
 
@@ -1545,12 +1556,9 @@ On n'a qu'une branche, `main`, et en face de son nom **il y a une `*`** car c'es
 Du coup pour créer la branche `devel` sur le parent de `HEAD` on peut écrire
 
 ```bash
-$ git branch devel HEAD~
-$ git branch
-  devel
-
-* main
+git branch devel HEAD~
 ```
+après quoi `git branch` affiche à présent
 
 ```{image} media/term-branch-devel.png
 :width: 500px
@@ -1610,17 +1618,17 @@ def fact (n):
 
 ### changer de branche  (`git switch`)
 
-+++
-
 C'est maintenant que nous allons faire une commande qui a un effet plus intrusif.
 
-Signalons bien que **la commande suivante devrait être exécutée seulement dans un repo propre**, c'est-à-dire sans modifications pendantes. Si ce n'est pas le cas, vous prenez le risque que git refuse de continuer.
+```{admonition} un repo propre
+:class: danger
 
-+++
+Signalons bien que **la commande suivante devrait être exécutée seulement dans un repo propre**, c'est-à-dire sans modifications pendantes. Si ce n'est pas le cas, vous prenez le risque que `git` refuse de continuer.
+```
 
 Nous voulons donc revenir en arrière (sur `devel`). On va demander à git de faire ça pour nous, on a préparé le terrain en créant une branche qui dit à partir d'où on veut recommencer, **il ne reste plus qu'à y aller**.
 
-Mais attention, puisqu'on veut faire une modification à partir de l'avant dernier commit, ça veut dire qu'on veut travailler sur les fichiers de cet avant dernier commit. Donc **on veut aussi que git change nos fichiers**. C'est assez évident quand on y pense, mais parfois certains débutants sont surpris de réaliser que **git a touché à leurs fichiers**.
+Mais attention, puisqu'on veut faire une modification à partir de l'avant dernier commit, ça veut dire qu'on veut travailler sur les fichiers de cet avant dernier commit. Donc **on veut aussi que `git` change nos fichiers**. C'est assez évident quand on y pense, mais parfois certains débutants sont surpris de réaliser que **`git` a touché à leurs fichiers**.
 
 +++
 
@@ -1649,10 +1657,12 @@ def fact (n):
 :align: center
 ```
 
-
 ON LE FAIT
 ```bash
-$ git switch devel
+git switch devel
+```
+qui va afficher
+```text
 Switched to branch 'devel'
 ```
 
@@ -1712,7 +1722,7 @@ pour information, la séquence qui consiste à
 * créer une nouvelle branche
 * et l'adopter comme branche courante
 
-est bien entendu assez fréquente, et dans la pratique on utilise un raccourci qui est
+est assez fréquente, évidemment, aussi dans la pratique on utilise un raccourci qui est
 
 ```
 git switch -c la-nouvelle-branche le-commit
@@ -1872,24 +1882,16 @@ une fois que vous avez bien réfléchi, voici la réponse :
 # en fait puisque git merge produit un commit
 # il faut lui passer un message
 
-$ git merge main -m"mon premier merge"
+git merge main -m"mon premier merge"
+```
+qui va répondre ceci
+```text
 Merge made by the 'recursive' strategy.
  fact.py | 5 ++++-
  1 file changed, 4 insertions(+), 1 deletion(-)
-
-$ git log --all --oneline --graph
-
-*   725be46 (HEAD -> devel) mon premier merge
-|\
-| * afec18a (main) une implémentation plus juste de la fonction factorielle
-
-* | bda7835 licence CC
-|/
-
-* e2c02ca première implémentation de factorielle dans le fichier fact.py
-* 31c4816 informations sur la licence
-* 01b0604 licence+readme
 ```
+
+après quoi `git log` nous montre ceci
 
 ```{image} media/term-first-merge.png
 :width: 800px
