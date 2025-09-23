@@ -21,6 +21,13 @@ nbhosting:
 
 +++
 
+[![Published](https://img.shields.io/badge/Published-Website-green)](https://git.info-mines.paris)
+[![MyST Build Status](https://img.shields.io/github/actions/workflow/status/ue12-p25/git/myst-to-pages.yml?branch=main&label=MyST%20Build%20Status)](https://github.com/ue12-p25/git/actions/workflows/myst-to-pages.yml)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/ue12-p25/git)
+[![Git Cheat Sheet](https://img.shields.io/badge/Git-Cheat%20Sheet-orange?logo=git)](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
+
+[![License: CC BY-NC-ND](https://img.shields.io/badge/License-CC%20BY--NC--ND-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/) *Valérie Roy & Thierry Parmentelat*
+
 ## un survol en slides
 
 Pour les néophytes, [voici un slideshow pour
@@ -59,24 +66,3 @@ Signalons en effet que git est utilisé **aussi** pour notamment :
 
 En réalité il potentiellement utile pour pratiquement **tout ce qui est numérique**  
 même si clairement **il s'applique le mieux** à des contenus **de nature textuelle**
-
-***
-
-+++
-
-## publication & ressources
-
-* ce cours est publié sur [https://git.info-mines.paris](https://git.info-mines.paris) ![the badge](https://github.com/ue12-p25/git/actions/workflows/myst-to-pages.yml/badge.svg)
-
-* les sources de ce cours sur github:
-  <https://github.com/ue12-p25/git>
-
-* également utile, une *cheat sheet* éditée par github :  
-  <https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf>
-
-+++
-
-## licence
-
-tout le contenu de ce cours est sous licence CC BY-NC-ND, Valérie Roy & Thierry
-Parmentelat
