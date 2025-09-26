@@ -40,6 +40,7 @@ site:
     # very visible in the header
     logo_text: "UE12: git"
     style: "_static/style.css"
+    outline_maxdepth: 1
 
 extends:
   - myst-toc.yml
