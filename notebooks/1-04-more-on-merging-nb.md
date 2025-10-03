@@ -44,7 +44,7 @@ un commit qui **contienne à la fois le code courant et celui du commit `to-merg
 
 (que comme d'habitude on peut exprimer comme un nom de branche, un SHA1, le résultat d'une navigation avec les opérateurs `~` et `^`, etc…)
 
-+++ {"tags": []}
++++
 
 ````{admonition} dans un repo propre
 :class: warning
@@ -86,7 +86,7 @@ alors on est dans un *fast-forward*, il n'est **pas besoin de créer** un commit
 
 ici dans le premier exemple on avait `to-merge=C → B → HEAD=A`, donc pas besoin de créer un commit, simplement besoin d'avancer la branche courante
 
-+++ {"tags": []}
++++
 
 `````{admonition} dans l'autre sens
 :class: dropdown seealso
@@ -111,7 +111,7 @@ dans tous les autres cas  - c'est-à-dire quand il **n'existe pas de lien de par
 
 pour réaliser ça, git a recours à des outils tiers (`diff` et `diff3`) qui reposent sur le fait que **les contenus sont textuels**
 
-+++ {"tags": []}
++++
 
 ````{admonition} le contenu binaire
 :class: attention
@@ -136,7 +136,7 @@ qui est de niveau intermédiaire, et de passer directement au résumé
 vous pourrez vous y reporter plus tard, lorsque vous aurez besoin de gérer un conflit…
 ````
 
-+++ {"tags": []}
++++
 
 ## mon premier conflit
 
@@ -148,11 +148,11 @@ allons-y, on va provoquer cette situation en pratique :
 * on va créer deux branches distinctes qui touchent au même endroit du fichier
 * du coup la fusion va échouer en signalant un conflit
 
-+++ {"tags": []}
++++
 
 ### préparation
 
-+++ {"tags": []}
++++
 
 * je commence par créer un dépôt *ad hoc*; on a vu déjà toutes ces commandes :
 
@@ -181,11 +181,11 @@ git add form.txt
 git commit -m"le formulaire vierge"
 ```
 
-+++ {"tags": []}
++++
 
 ### les deux branches
 
-+++ {"tags": []}
++++
 
 ce qu'on veut faire, c'est simuler deux changements faits en même temps par deux personnes différentes; disons qu'on a deux profs, Minerva McGonagall et Albus Dumbledore, qui remplissent chacun leur partie
 
@@ -198,19 +198,15 @@ Ils partent donc tous les deux du formulaire vide, ils remplissent chacun leur p
 
 ```{code-cell}
 :cell_style: split
-:tags: []
 
 cat form-mcgonagall.txt
 ```
 
 ```{code-cell}
 :cell_style: split
-:tags: []
 
 cat form-dumbledore.txt
 ```
-
-+++ {"tags": []}
 
 sauriez-vous simuler ce scénario ?
 
@@ -222,7 +218,7 @@ git add form.txt
 git commit -m"notes mcgonagall"
 ```
 
-+++ {"tags": []}
++++
 
 pour la deuxième version, on a besoin de créer la branche `dumbledore` et de revenir en arrière; on peut faire en un seul coup avec le raccourci `git switch -c`  
    ```bash
@@ -241,7 +237,7 @@ pour rappel, on peut aussi décomposer, et le faire pas à pas en deux fois
   ```
 ````
 
-+++ {"tags": []}
++++
 
 à ce stade, le formulaire est à nouveau vide (car on est revenu en arrière)
 
@@ -254,7 +250,7 @@ git add form.txt
 git commit -m"notes dumbledore"
 ```
 
-+++ {"tags": []}
++++
 
 et à ce stade le repo ressemble à ceci
 
@@ -268,11 +264,11 @@ $ git log --all --graph --oneline
 * 6f201cc le formulaire vierge
 ```
 
-+++ {"tags": []}
++++
 
 ### le merge
 
-+++ {"tags": []}
++++
 
 à ce stade on a le choix :
 
@@ -286,7 +282,7 @@ $ git switch main
 Switched to branch 'main'
 ```
 
-+++ {"tags": []}
++++
 
 on peut maintenant essayer de fusionner
 ```bash
@@ -298,7 +294,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 ouh là, il n'a pas l'air content !
 
-+++ {"tags": []}
++++
 
 ce qui se passe, c'est ceci
 
@@ -313,7 +309,7 @@ ce qui se passe, c'est ceci
 
 voilà, on a créé **un conflit**, et du coup **tout s'arrête**…
 
-+++ {"tags": []}
++++
 
 ### conflit: état du repo 
 
@@ -352,7 +348,7 @@ dans quel état est notre dépôt à ce stade ?
 * noter enfin qu'à ce stade, on ne **peut plus** utiliser la commande `git commit` pour créer un nouveau commit  
   il faut d'abord retourner dans un état propre: **nettoyer le repo**
 
-+++ {"tags": []}
++++
 
 ### nettoyer - option 1: revenir en arriére
 
@@ -367,12 +363,12 @@ pour cela, on a principalement deux choix :
   ```
   ouf, on a **tout effacé**, on est exactement **comme avant le merge**
 
-+++ {"tags": []}
++++
 
 ### nettoyer - option 2: résoudre le conflit
 2. soit on décide de gérer, c'est-à-dire de passer sur les conflits (nous on n'en a qu'un) et de décider quoi faire;
 
-+++ {"tags": []}
++++
 
 faisons-le; nous ici on veut dire que le total, ça n'est ni 12 ni 15, mais 27
 
@@ -398,7 +394,7 @@ que vous utilisiez les options vs-code (ce qu'on n'a pas pu faire ici) ou que vo
 certains débutants ne réalisent pas que ces annotations sont vraiment dans le fichier, et rendent du code **qui ne marche plus du tout** parce que Python ou C++ ne sait pas quoi faire avec un texte qui contient ce genre de bidules, évidemment
 ````
 
-+++ {"tags": []}
++++
 
 à ce stade :
 

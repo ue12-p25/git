@@ -1537,6 +1537,7 @@ git branch
 ```
 qui affiche à ce stade
 ```text
+
 * main
 ```
 

@@ -17,8 +17,6 @@ nbhosting:
   title: git pour les cours
 ---
 
-+++ {"slideshow": {"slide_type": ""}}
-
 # aperçu de l'implémentation
 
 +++

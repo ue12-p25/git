@@ -21,7 +21,7 @@ nbhosting:
 
 quelques TPs pour pratiquer `git`
 
-+++ {"tags": []}
++++
 
 ## tp-add-by-lines
 
@@ -33,7 +33,7 @@ quand on a fait plusieurs modifications distinctes, et qu'on veut les grouper en
 <https://github.com/ue12-p25/git-tp-add-by-lines>
 ````
 
-+++ {"tags": []}
++++
 
 ## tp-conflict
 
@@ -72,11 +72,13 @@ travail individuel
 :class: warning
 ```{admonition} 1. on fait **tout sous vs-code**
 c'est sans doute la plus simple:
+
   * pour 3., il faut chercher une icone **+**
   * et assez logiquement pour 6, il faut chercher l'icone **-**
   * pour 8. le verbe est *discard*
 ```
 ```{admonition} 2. dans le terminal
+
 * voyez le notebook **`1-05`** ***"différences pendantes"*** pour les commandes à utiliser
 ```
 ````
@@ -99,7 +101,7 @@ travail individuel
 
 ````
 
-+++ {"tags": []}
++++
 
 ## tp-clone-pull
 
@@ -124,7 +126,7 @@ les instructions pour préparer le TP sont ici <https://github.com/ue12-p25/git-
 ```
 ````
 
-+++ {"tags": []}
++++
 
 ## tp-killing-push
 
@@ -137,7 +139,7 @@ c'est sûrement que quelqu'un d'autre a poussé avant vous…
 <https://github.com/ue12-p25/git-tp-killing-push>
 ````
 
-+++ {"tags": []}
++++
 
 ## tp-teamwork
 
@@ -150,7 +152,7 @@ un tp plus complet où on simule un travail en groupe
 <https://github.com/ue12-p25/git-tp-teamwork>
 ````
 
-+++ {"tags": []}
++++
 
 ## tp-pull-request-fork
 

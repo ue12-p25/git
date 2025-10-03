@@ -57,12 +57,14 @@ ou n'importe quel repo sur github - ça marche aussi pour certains TPs:
 * se déplacer (avec les commandes `cd`, `pwd` et `ls`) dans le dossier souhaité
 * une fois dans le bon dossier, il va falloir faire un `git clone`  
   et pour trouver le bon URL, vous
+
   * allez sur la page du repo sur github, [par exemple ici](https://github.com/ue12-p25/numerique)
   * vous copiez dans le presse-papier l'URL du repo - en prenant bien SSH  
   ```{image} media/github-choose-ssh.png
   :width: 500px
   :align: center
   ```
+
   * et vous utilisez cela pour taper une commande qui ressemble à ceci
   ```bash
   #         cette partie est copiée depuis github.com

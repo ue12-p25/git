@@ -88,7 +88,7 @@ et en effet c'est possible, car
 `git pull --rebase` = `git fetch` + `git rebase`
 ````
 
-+++ {"tags": []}
++++
 
 ````{admonition} note
 :class: attention
