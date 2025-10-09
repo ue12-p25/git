@@ -295,3 +295,22 @@ article main table {
 html[data-theme='dark'] .corrige {
     background-image: radial-gradient(circle at top left, #0e3852, #0c5517);
 }
+
+/* our exercises often do
+1. the thing to do
+
+```{code-cell} ipython3
+# your code
+```
+
+it would be better if we could indent the code cell but if we do, we lose the overall cell structure
+as the code cell is then part of the list item, in markdown, and is no longer deemed a code cell by jupyter
+*/
+
+*+div.group\/block>div.myst-code {
+    margin-top: 0.3em;
+}
+
+*:has(+div.group\/block>div.myst-code) {
+    margin-bottom: 0.3em;
+}
