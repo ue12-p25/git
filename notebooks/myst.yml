@@ -24,7 +24,8 @@ project:
   # bibliography: []
 
 site:
-  template: book-theme
+  #template: book-theme
+  template: https://github.com/flotpython/myst-theme/releases/download/custom/book.zip
   # used in the tab name
   title: ue12-p25-git
   # this would be for the horizontal header bar - not used here (yet)
