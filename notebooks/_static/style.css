@@ -43,7 +43,7 @@
  * thanks SO
  * https://stackoverflow.com/questions/1817792/is-there-a-previous-sibling-selector
  */
-article main {
+main {
     p:has(+ :is(ol, ul)) {
         margin-bottom: 0px !important;
     }
