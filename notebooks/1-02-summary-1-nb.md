@@ -8,13 +8,13 @@ kernelspec:
   language: bash
   name: calysto_bash
 language_info:
+  name: bash
   help_links:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
-  name: bash
 ---
 
-# résumé du chapitre précédent
+# résumé du notebook précédent
 
 +++
 

@@ -8,13 +8,13 @@ kernelspec:
   language: bash
   name: calysto_bash
 language_info:
+  name: bash
   help_links:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
-  name: bash
 ---
 
-# résumé du chapitre précédent
+# résumé du chapitre
 
 +++
 
@@ -42,19 +42,17 @@ language_info:
 | commande | action |
 | ----------: | :-------- |
 | ￮￮￮￮￮￮￮￮￮￮￮￮ | ***regarder*** |
-| `git remote` | liste les *remotes* connus de ce repo |
-|              | très souvent il y a un seul *remote* |
-|              | créé par `clone` et qui s'appelle `origin` |
+| `git remote` | liste les *remotes* connus |
+|              | très souvent il y a un seul *remote* qui s'appelle `origin` - créé par `clone` |
 | `git fetch`  | *ou* `git fetch origin` |
 |              | va chercher dans le *remote* les nouveaux commits |
 |              | et les ajoute dans le dépôt courant |
-|              | **non intrusif:** le commit courant, l'index et les fichiers |
-|              | ne **sont pas modifiés** |
+|              | **non intrusif:** le commit courant, l'index et les fichiers ne **sont pas modifiés** |
 | ￮￮￮￮￮￮￮￮￮￮￮￮ | ***adopter des nouveautés*** |
 | `git pull` | *ou* `git pull origin main` |
 |            | fait d'abord un `fetch origin` |
 |            | puis un `merge origin/main` |
-|            | **intrusif** : comme pour un `merge` |
+|            | **intrusif** : comme pour un `merge` - peut changer fichiers et index et commit courant |
 | ￮￮￮￮￮￮￮￮￮￮￮￮ | ***publier des nouveautés*** |
 | `git push` | *ou* `git push origin main` |
 |            | essaie de pousser dans le *remote* `origin` |

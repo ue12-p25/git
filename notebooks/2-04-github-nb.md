@@ -8,10 +8,10 @@ kernelspec:
   language: bash
   name: calysto_bash
 language_info:
+  name: bash
   help_links:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
-  name: bash
 ---
 
 # github
@@ -83,11 +83,11 @@ git@github.com:ue12-p25/git.git
   pour la suite, si on ne précise rien, ce sera pour parler de repos publics
 
 * un repo public peut être  
-  **lu**, et donc aussi cloné, par tout le monde  
-  **écrit** (ou pourra pousser dedans) par une liste finie de gens définie dans les *Settings* du repo (et de l'orga)
+  - **lu**, et donc aussi cloné, par tout le monde  
+  - **écrit** (ou pourra pousser dedans) par une liste finie de gens définie dans les *Settings* du repo (et de l'orga)
 
 * un repo privé quant à lui peut être  
-  **lu** et **écrit** par une liste finie de gens (idem)
+  - **lu** et **écrit** par une liste finie de gens (idem)
 
 +++
 
@@ -100,7 +100,7 @@ dans un scénario typique:
   tout au long du codage, elle le met dans un repo git
 1. lorsqu'elle est contente elle va "mettre cela sur github"  
   c'est-à-dire créer un repo vide dans `https://github.com/alice/rhubarbe`  
-  et **pousser** son repo dedans
+  et **pousser** son repo dedans [voyez aussi plus bas](#label-github-create-repo)
 1. son travail devient donc accessible à tout le monde, et Bob le remarque
 1. il télécharge alors le contenu du repo sur son ordi
   avec un `git clone`
@@ -161,24 +161,42 @@ dans un scénario typique:
 
 +++
 
-### créer un repo sur github: README or not README ?
+(label-github-create-repo)=
+### créer un repo sur github: avec ou sans fichiers ?
+:::::{admonition} 
+:label: 
+:class: tip
 
-commençons avec un conseil pratique; il y a un point qui gêne pas mal les débutants, au moment de se mettre sur github:  
-lorsque vous créez le repo par l'interface web de github, on vous demande à un moment:
+c'est sans doute l'occasion d'une petite digression, pour expliquer un problème fréquent avec les débutants
 
-> voulez-vous créer un README ? voulez-vous créer une licence ? voulez-vous ajouter un `.gitignore` ?
+::::{grid} 2
+:::{div}
+lorsque vous allez sur github pour créer un repo, on vous pose quelques questions; et celles qui sont entourées en rouge ici à droite appellent un avertissement:
 
-en réalité, cette question devrait plutôt être entendue comme 
+notamment **si vous avez déjà créé** un dépôt sur votre ordi, **ne cochez aucune de ces cases !**  
+(ou pour le dire autrement, demandez à github de ne créer aucun fichier)
 
-> voulez-vous créer un repo complètement vide (auquel cas vous choisissez NON à toutes ces questions)
-> ou bien avec un premier commit (qui contiendra alors le ou les fichiers choisis) ?
+si vous le faites, cela oblige github à **créer un premier commit** (avec le contenu des fichiers que vous avez demandés)
 
-ou encore, si vous préférez
+:::
 
-> est-ce que vous avez déjà commencé à créer des commits de votre coté (ne créez pas le README)
-> ou bien est-ce que vous partez vraiment de rien ?
+:::{image} media/github-create-repo-1.png
+:size: 200px
+:align: right
+:::
+::::
+et pourquoi est-ce un problème si vous avez déjà des commits ?  
+eh bien vous allez vous retrouver à devoir *merge* deux commits (celui de votre ordi et celui de github) qui n'ont **pas d'ancêtre commun**; et cela demande de recourir à des options spéciales
 
-en effet, si vous avez **déjà créé un repo** quelque part sur votre ordi, il est **fortement recommandé** de **ne pas créer** de commit du coté de github, car ensuite il faudrait merger deux fils sans ancêtre commun...
+alors bon, oui c'est faisable (comme tout avec `git`), mais ça faire perdre du temps; et surtout ça donne un démarrage de projet qui ne ressemble à rien, avec deux racines sans parent, bref **c'est à éviter** !
+
+::::{admonition} petit quiz: les recettes magiques affichées par github après création 
+:class: dropdown note
+d'ailleurs voici ce que vous montre github juste après que vous ayez créé un repo  
+est-ce que vous arrivez à lire et à comprendre ce code ?
+:::{image} media/github-create-repo-2.png
+::::
+:::::
 
 +++
 
