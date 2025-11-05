@@ -12,8 +12,6 @@ language_info:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
-nbhosting:
-  title: "r\xE9sum\xE9 (2)"
 ---
 
 # résumé du chapitre précédent

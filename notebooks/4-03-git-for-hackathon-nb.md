@@ -13,8 +13,6 @@ language_info:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
-nbhosting:
-  title: git pour les cours
 ---
 
 # `git` pour les hackathons

@@ -12,8 +12,6 @@ language_info:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
-nbhosting:
-  title: "diff\xE9rences pendantes"
 ---
 
 # différences pendantes
