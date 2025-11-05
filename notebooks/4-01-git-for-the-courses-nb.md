@@ -9,10 +9,10 @@ kernelspec:
   language: bash
   name: calysto_bash
 language_info:
+  name: bash
   help_links:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
-  name: bash
 ---
 
 # cloner un cours
@@ -22,21 +22,22 @@ language_info:
 pour certains cours, on vous conseille de mettre **tout le contenu du cours sur
 votre ordinateur**; pour cela la démarche à suivre est indiquée ci-dessous
 
-```{admonition} et si ça évolue ?
+````{admonition} et si ça évolue ?
 :class: dropdown
 
 nous mettons régulièrement à jour les cours; du coup
 il peut être nécessaire de mettre le cours à jour **tout en conservant votre
 travail**, [c'est ce qu'on aborde dans la dernière partie ci-dessous](label-pull-course)
-```
+````
 
-```{admonition} une vidéo de présentation
+:::{admonition} une vidéo de présentation
 :class: dropdown tip
 
 pour rappel, dans la vidéo suivante on a fait une micro-démo
 de l'environnement en action
-<https://www.youtube.com/watch?v=i_ZcP7iNw-U>
+```{iframe} https://www.youtube.com/embed/i_ZcP7iNw-U?rel=0&amp;controls=1
 ```
+:::
 
 +++
 
@@ -47,9 +48,7 @@ mais en cas de besoin reportez-vous [au cours d'introduction](https://intro.info
 
 +++
 
-## au début du cours
-
-### cloner un cours sur son ordinateur
+## cloner un cours sur son ordinateur
 
 ou n'importe quel repo sur github - ça marche aussi pour certains TPs:
 
@@ -77,19 +76,23 @@ ou n'importe quel repo sur github - ça marche aussi pour certains TPs:
 
 * dans le dossier choisi, vous allez trouver tout le contenu du cours; les notebooks, lorsqu'il y en a , sont généralement dans un sous-dossier `notebooks/`
 
-### cours disponibles
++++
+
+## cours disponibles
 
 en naviguant sur github et plus particulièrement [sur la page de l'orga
 ue12-p25](https://github.com/ue12-p25/), vous pouvez voir l'ensemble des
 répertoires des cours d'informatique que vous avez eu jusque-là ! 
 
-````{admonition} et au second semestre ?
+:::{admonition} et au second semestre ?
 au second semestre les cours seront dans l'orga <https://github.com/ue22-p25/>
-````
+:::
 
-### installer les dépendances
++++
 
-````{admonition} optionnel: un environnement virtuel
+## installer les dépendances
+
+:::{admonition} optionnel: un environnement virtuel
 :class: dropdown
 
 * *optionnel*: vous pouvez créer un environnement virtuel en lui donnant
@@ -109,7 +112,7 @@ au second semestre les cours seront dans l'orga <https://github.com/ue22-p25/>
   ```bash
   conda activate numerique
   ```
-````
+:::
 
 * si le dossier du cours contient un fichier `requirements.txt`  
   allez dans ce dossier et tapez
@@ -157,7 +160,7 @@ avant chaque nouveau cours, comme le prof a pu faire quelques petits changements
 
 +++
 
-###  en cas de conflit
+##  en cas de conflit
 
 si au moment du pull, vous voyez ce message:  
 >  `automatic merge failed; fix conflicts and then commit the result.`
@@ -169,7 +172,7 @@ rare, mais si c'est le cas, il va vous falloir régler les conflits...
 
 deux options à ce stade
 
-#### chicken out
+### chicken out
 
 tout ça vous fait peur, vous voulez juste abandonner:
 
@@ -180,7 +183,7 @@ git merge --abort
 et vous revenez à votre commit, *no harm done*  
 (et rien ne vous empêche de recommencer plus tard)
 
-#### résoudre les conflits
+### résoudre les conflits
 
 sinon voici comment on résoud les conflits:
 
@@ -215,5 +218,5 @@ sinon voici comment on résoud les conflits:
   utile ici de mettre un message spécifique)
 
 
-si vous avez des questions, n'hésitez pas à nous contacter (ou à chercher sur
-internet en anglais).
+naturellement, si vous avez des questions, ou des soucis avec cette opération,
+n'hésitez pas à nous contacter (ou à chercher sur Internet en anglais).

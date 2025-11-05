@@ -8,10 +8,10 @@ kernelspec:
   language: bash
   name: calysto_bash
 language_info:
+  name: bash
   help_links:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
-  name: bash
 ---
 
 # synchro entre dépôts : pousser
@@ -73,6 +73,9 @@ cette vidéo décortique le fonctionnement de `push` dans un cas simple
 ```
 ````
 
++++
+
+(label-pull-before-push)=
 ## mais attention le push peut coincer !!!
 
 dans la suite de la vidéo on envisage un cas (**très fréquent**) où le push **ne peut pas se faire** avant que l'on ne fasse d'abord un `pull`
@@ -83,6 +86,8 @@ dans la suite de la vidéo on envisage un cas (**très fréquent**) où le push 
 ```{iframe} https://www.youtube.com/embed/xKpv62r6tlI?rel=0&amp;controls=1
 ```
 ````
+
++++
 
 ## *tracking branch* (suite et fin, toujours optionnel)
 

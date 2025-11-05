@@ -8,10 +8,10 @@ kernelspec:
   language: bash
   name: calysto_bash
 language_info:
+  name: bash
   help_links:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
-  name: bash
 ---
 
 # synchro entre dépôts : tirer
@@ -22,27 +22,31 @@ language_info:
 
 +++
 
-### jusqu'ici on est resté local
+````{admonition} jusqu'ici on est resté local
 
-**jusqu'ici** on a abordé `git` du point de vue **"usage local"**; on a créé tous nos commits et branches localement, on n'a eu à **aucun moment besoin du réseau**.
+**jusqu'ici** on a abordé `git` du point de vue **"usage local"**: on a créé tous nos commits et branches **localement**, on n'a eu à **aucun moment besoin du réseau**.
 
-notez que même dans ce cadre délibérément limité, `git` remplit déjà plein de fonctions super utiles :
+notez que même dans ce cadre délibérément limité, `git` remplit **déjà plein de fonctions super utiles** :
 
 * les commits sont des sauvegardes, si on s'embrouille à un moment on peut facilement revenir à un état stable
 * on a une trace structurée de tous les changements, par qui, quand, pourquoi
 * on peut revenir en arrière
 * on peut découper le travail en problèmes indépendants, en créant autant de **branches** que nécessaire
 * on peut intégrer (**merge / fusionner**) facilement, une fois que tous les morceaux sont terminés
+````
 
 +++
 
-### en réseau
+````{admonition} à plusieurs
 
-mais bien sûr, on l'a vu dans les slides d'introduction, on peut aussi utiliser git pour travailler à plusieurs
+mais bien sûr, on l'a vu dans les slides d'introduction, on peut aussi utiliser git pour **travailler à plusieurs**
 
 ```{image} media/kn2-synchro-overview.svg
 :align: center
 ```
+````
+
++++
 
 ````{admonition} le réseau
 :class: note
@@ -50,7 +54,7 @@ mais bien sûr, on l'a vu dans les slides d'introduction, on peut aussi utiliser
 pour ça, on va **utiliser le réseau pour synchroniser deux dépôts**
 
 l'architecture ci-dessus n'est pas la seule possible, mais c'est un cas hyper fréquent:  
-le repo au milieu est hébergé sur github, il sert de relais entre les ordis de bob et d'alice, qui du coup n'ont pas besoin de communiquer entre eux directement
+le repo au milieu est hébergé sur *github*, il **sert de relais** entre les ordis d'`alice` et de `bob`, qui du coup n'ont pas besoin de communiquer entre eux directement (en plus, en général on est derrière un NAT ou un firewall...)
 ````
 
 +++
@@ -68,37 +72,43 @@ et du coup en passant on va parler aussi de `git fetch` qui est, si on veut, un 
 
 +++
 
-## `git clone`
+## copier un dépôt: `git clone`
 
 mais pour commencer, voyons `git clone`; on a rencontré et même déjà utilisé cette commande, c'est celle qui permet en partant de rien, de dupliquer un dépôt, typiquement trouvé sur github; le fonctionnement est simple, et peut être illustré comme ceci
 
 ````{admonition} rappel: toujours utiliser les URLs en SSH
-
+:class: dropdown
+```{image} media/github-choose-ssh.png
+:width: 600px
+```
 ````
 
 ````{admonition} vidéo: cloner un dépôt
 :class: dropdown seealso
 <!-- Clone.mp4 -->
-```{iframe} https://www.youtube.com/embed/qBa1S5STOHI?rel=0&amp;controls=1
+```{iframe} https://www.youtube.com/embed/X1kt1Wi1MmY?rel=0&amp;controls=1
 ```
 ````
 
-* dans un premier temps on duplique le graphe des commits, y compris le commit courant
+* dans un premier temps on duplique le graphe des commits - y compris bien sûr le commit courant
 * à partir de quoi on peut remplir l'index et les fichiers
 
 +++
 
 nous allons l'exécuter sur un repo de test pour mettre en évidence d'autres effets de la commande  
-vérifiez que vous n'avez pas de dossier qui s'appelle `sandbox`, et tapez la commande
+vérifiez que vous n'avez pas de dossier qui s'appelle `sandbox`, et tapez dans votre terminal la commande
 
 ```bash
-$ git clone git@github.com:ue12-p25/git-sandbox.git sandbox
+git clone git@github.com:ue12-p25/git-sandbox.git sandbox
+```
+ce qui devrait produire une sortie dans le genre de ceci
+```text
 Cloning into 'sandbox'...
-remote: Enumerating objects: 4, done.
-remote: Counting objects: 100% (4/4), done.
-remote: Compressing objects: 100% (4/4), done.
-remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
-Receiving objects: 100% (4/4), done.
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 10 (delta 0), reused 10 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (10/10), done.
 ```
 
 cela a eu pour effet de créer un dossier `sandbox` (le dernier paramètre passé à `git clone`); allons-y
@@ -111,10 +121,14 @@ cd sandbox
 
 ## les *remotes*
 
+::::{admonition} affichons la liste des *remote*
 tapons maintenant la commande
 
 ```bash
-$ git remote
+git remote
+```
+qui vous répond
+```text
 origin
 ```
 
@@ -123,49 +137,66 @@ interprétons cette réponse sybilline :
 * `git` nous dit que notre dépôt a un copain  
 * dans le sens où : on a connaissance d'un **autre dépôt**, qui contient le **même projet**  
 * dans le jargon `git`, un tel dépôt s'appelle un *remote*  
-* et par commodité, `git clone` crée un *remote* pour se souvenir d'où on a fait le clône  
+* et par commodité, `git clone` crée un *remote* **pour se souvenir d'où on a fait le clône**  
   car il y a toutes les chances qu'on ait de nouveau à échanger avec lui  
-  et lui donne par convention le nom de **`origin`**
+* et lui donne **par convention** le nom de **`origin`**
+* un *remote* en fait, c'est **juste un alias** pour l'URL qui permet de joindre ce dépôt distant
 
-````{admonition} ce qu'il faut bien comprendre
-
-* dans notre cas, ce dépôt, c'est bien sûr celui sur github - ça pourrait être quoi d'autre ?
-* et surtout, ce nom `origin` en fait c'est **juste un alias** pour l'URL  
-  `git@github.com:ue12-p25/git-sandbox.git`
-
-on va pouvoir utiliser ce nom à chaque fois qu'on voudra utiliser une commande de synchronisation, comme `push`, `pull`, enfin tout ce qu'on va voir tout de suite
-````
-
-+++
-
-d'ailleurs pour le vérifier, on peut faire
-
-```bash
-$ git remote get-url origin
-git@github.com:ue12-p25/git-sandbox.git
-```
-
-+++
-
-````{admonition} le nom origin
-:class: note
+:::{admonition} le nom `origin`
+:class: tip dropdown
 
 le remote `origin` est créé par `git clone`  
 c'est pourquoi lorsqu'on procède dans l'autre sens (un repo créé localement qu'on veut ensuite pousser sur github),
-la formule proposée par github comporte justement la création manuelle du remote origin
+la formule proposée par github comporte justement la création "à la main" du remote `origin`
 
 ```{image} media/git-remote-add.png
 :align: center
+:width: 600px
+```
+:::
+::::
+
++++
+
+````{admonition} un *remote*, c'est juste un alias
+* dans notre cas du coup, `origin` c'est bien sûr celui sur github (ça pourrait être quoi d'autre ?)
+* et surtout, ce nom `origin` en fait c'est **juste un alias** pour l'URL  
+  `git@github.com:ue12-p25/git-sandbox.git`
+
+on va pouvoir utiliser ce nom à chaque fois qu'on voudra interagir avec un autre repo, en utilisant une commande de synchronisation, comme `push`, `pull`, enfin tout ce qu'on va voir tout de suite
+
+:::{admonition} changer le nom ?
+:class: dropdown warning
+c'est tout à fait possible de renommer un remote; vous pourriez par exemple décider de plutôt appeler celui-ci `github` parce que vous trouvez ça plus clair; et pour ça vous feriez simplement
+```bash
+git remote rename origin github
+```
+une fois qu'on a dit ça, ce n'est pas forcément une pratique recommandée pour les débutants...
+:::
+````
+
++++
+
+````{admonition} à quoi correspond un *remote* ?
+
+d'ailleurs pour vérifier à quoi correspond un remote au juste, on peut faire
+
+```bash
+git remote get-url origin
+```
+qui nous répond
+```text
+git@github.com:ue12-p25/git-sandbox.git
 ```
 ````
 
 +++
 
-## `git pull`
+## mettre à jour depuis un dépôt: `git pull`
 
 à quoi ça sert un remote ?
 
-une fois qu'on a cloné, on est redevenu totalement autonome; on pourrait par exemple couper le réseau, on a tout ce qu'il faut localement pour modifier le code, on peut travailler dans son coin, et créer localement des commits si on en a besoin
+une fois qu'on a cloné, on est devenu totalement autonome; on pourrait par exemple couper le réseau, on a tout ce qu'il faut localement pour modifier le code, on peut travailler dans son coin, et créer localement des commits si on en a besoin.
 
 ça n'empêche pas que de temps en temps on a envie d'aller voir s'il n'y a pas eu des nouveautés; pour ça on va retourner **demander au dépôt initial s'il y a du nouveau**
 
@@ -179,9 +210,10 @@ le `pull` va procéder en deux temps:
 et commençons par regarder son fonctionnement illustré dans une vidéo (dans le prolongement du clip précédent)  
 
 ````{admonition} comme toujours: on part d'un repo propre
-:class: dropdown
+:class:
 
-on fait ici l'hypothèse qu'on n'a pas touché à notre repo local, et que donc il est propre
+on fait ici l'hypothèse que le repo est propre - c'est-à-dire qu'on n'a pas de différence pendante  
+de façon générale, prenez l'habitude de lancer les commandes de synchronisation dans un repo propre !
 ````
 
 ````{admonition} vidéo: comment ça marche git pull
@@ -208,21 +240,21 @@ pour les geeks, sachez qu'on peut aussi demander à `pull` de faire plutôt `fet
 
 +++
 
-### `git pull` est intrusif
+## `git pull` est intrusif
 
 le premier point important à retenir, c'est que
 
 * `git fetch` est une opération **totalement inoffensive**, elle n'a **pas d'impact** sur l'état de notre dépôt  
   (commit courant + index + fichiers)
 
-* **dans un `pull` par contre**, c'est la partie `merge` - qu'on a déjà étudiée  
+* **dans un `pull` par contre**, c'est la partie `merge` - qu'on a déjà étudiée -  
   qui elle, peut **avoir un impact sur l'état du dépôt** (commit courant + index + fichiers)
   
 donc déja, comme premier conseil, il est bon de prendre l'habitude faire `git pull` **dans un dépôt propre**
 
 +++
 
-### branches distantes
+## branches distantes
 
 le second point à retenir, c'est le rôle des références de branches distantes, comme par exemple
 
@@ -241,17 +273,17 @@ dit autrement, si vous ne faites jamais ni `git pull` ni `git fetch` pendant un 
 
 +++
 
-````{admonition} note
+:::{admonition} `git fetch` automatique ?
 :class: note
 
 en pratique on fait plus souvent `git pull` que `git fetch`, car bien sûr souvent ce qu'on veut faire c'est se mettre à jour; et mon opinion c'est que c'est un peu dommage, car le fait de faire d'abord `fetch` permet de bien évaluer l'impact que va avoir le `pull` (notamment : est-ce un fast-forward ?)
 
 une fois qu'on a dit ça, si vous utilisez une GUI comme `Sourcetree` ou `Fork` ou `Tower` ou autre, il y a de fortes chances qu'elle fasse pour vous un `git fetch` **automatiquement** - genre toutes les 5 minutes; et c'est très pratique car ça permet, justement, de recevoir des notifications lorsqu'il y a du nouveau dans le dépôt *upstream*
-````
+:::
 
 +++
 
-### *fast-forward* ou pas ?
+## *fast-forward* ou pas ?
 
 la troisième chose à retenir est que, puisque `pull` finit par faire un `merge`, tout ce qu'on a appris sur le merge s'applique ici aussi; et notamment :
 
@@ -265,8 +297,6 @@ la troisième chose à retenir est que, puisque `pull` finit par faire un `merge
   on est en train de faire un `pull`, on n'est pas du tout en train d'essayer de toucher au dépôt distant  
   (dans lequel, de toutes façons, on n'a pas forcément le droit d'écrire, en plus)
 
-+++
-
 dans cette vidéo on va illustrer le cas où, cette fois, j'ai fait un commit de mon coté avant de `pull`:
 
 ````{admonition} vidéo: un pull alors qu'on a divergé
@@ -276,7 +306,9 @@ dans cette vidéo on va illustrer le cas où, cette fois, j'ai fait un commit de
 ```
 ````
 
-### *tracking branch* (optionnel)
++++
+
+## *tracking branch* (optionnel)
 
 à ce stade de notre scénario, et pour faciliter la vie aux débutants, on peut en effet faire juste 
 ```bash
