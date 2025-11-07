@@ -9,10 +9,10 @@ kernelspec:
   language: bash
   name: calysto_bash
 language_info:
+  name: bash
   help_links:
   - text: MetaKernel Magics
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
-  name: bash
 ---
 
 # index des TPs
@@ -204,6 +204,15 @@ Certains workflows imposent que tous les changements soient fait via une *Pull R
 ## tp-class-text
 
 un TP à faire à toute la classe
+
+```{admonition} Attention conflits !
+:class: danger
+
+dans sa forme actuelle, ce TP va créer pas mal de conflits  
+bien que les modifications soient en effet sur des lignes distinctes, si tous les élèves modifient la même version vide du fichier, lorsque le prof accepte les PRs il y a, au fur et à mesure, de plus en plus de chance qu'un conflit apparaisse; en gros il y a conflit si on a déjà mergé une ligne immédiatement voisine de celle qu'on est en train de merger
+
+pas forcément grave en soi, mais il faut être prêt à le gérer.
+```
 
 ce TP demande une courte préparation spécifique par groupe  
 une fois que c'est prêt vous devrez visiter une URL **dans le genre de**  
