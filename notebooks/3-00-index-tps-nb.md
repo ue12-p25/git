@@ -210,20 +210,23 @@ une fois que c'est prêt vous devrez visiter une URL **dans le genre de**
 *`https://github.com/ue12-p25/git-tp-class-text-groupe3`*  
 
 ````{admonition} à faire par le prof
-:class: dropdown seealso
+:class: dropdown danger
 
-à destination des avancés, et pour illustrer le cours, voici comment le prof peut faire la préparation pour cet exo, avec le bon numéro de groupe *of course*
+à destination des avancés, et pour illustrer le cours, voici comment le prof peut faire la préparation pour cet exo  
+(avec le bon numéro de groupe *of course*)
 
 ```bash
+GRP=3
   # cloner localement le repo de référence
-git clone git@github.com:ue12-p25/git-tp-class-text-template.git
+git clone git@github.com:ue12-p25/git-tp-class-text-template.git git-tp-class-text-groupe${GRP}
   # aller dedans
-cd git-tp-class-text-template
+cd git-tp-class-text-groupe${GRP}
   # créer le repo sur github - il faut avoir les droits
-gh repo create --public ue12-p25/git-tp-class-text-groupe3
+gh repo create --public ue12-p25/git-tp-class-text-groupe${GRP}
   # ajouter un remote qui pointe vers ce nouveau repo (vide pour l'instant)
-git remote add my-group git@github.com:ue12-p25/git-tp-class-text-groupe3.git
+git remote rename origin template
+git remote add origin git@github.com:ue12-p25/git-tp-class-text-groupe${GRP}.git
   # pousser dedans
-git push my-group main
+git push origin main
 ```
 ````
