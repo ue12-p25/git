@@ -21,6 +21,8 @@ project:
     - UE12
     - git
   date: 2025-06-01
+  jupyter:
+    lite: true
   # bibliography: []
 
 site:
